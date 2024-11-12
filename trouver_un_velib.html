@@ -4,16 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trouver un vélib</title>
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <!-- NAVBAR -->
-    <div class="velib--desktop">
+    <div class="velib">
       <div class="velib__countdown">
         <div class="velib__countdown-container">
-          <div class="velib__day"></div>
-          <div class="velib__hours"></div>
-          <div class="velib__minutes"></div>
-          <div class="velib__seconds"></div>
+          <div class="velib__compteur day" id="countdown-day">
+            99 <em>Jours</em>
+          </div>
+          <div class="velib__compteur hours" id="countdown-hours">
+            99<em>Heures</em>
+          </div>
+          <div class="velib__compteur minutes" id="countdown-minutes">
+            99<em>Minutes</em>
+          </div>
+          <div class="velib__compteur seconds" id="countdown-seconds">
+            99<em>Secondes</em>
+          </div>
         </div>
       </div>
       <div class="velib__description">
