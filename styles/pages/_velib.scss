@@ -1,3 +1,51 @@
 .velib {
-  background: red;
+  font-family: Montserrat;
+  height: 100vh;
+  .velib__countdown {
+    margin-top: 300px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    .velib__countdown-container {
+      background: blue;
+      height: 40%;
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+      .velib__compteur {
+        position: relative;
+        height: 100%;
+        width: 22%;
+        background: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding-bottom: 7px;
+        font-size: 1.9rem;
+        em {
+          position: absolute;
+          font-size: 0.45rem;
+          bottom: 5px;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+  .velib__description {
+    margin: 20px 30px;
+    text-align: center;
+    h2 {
+      font-size: 2.5rem;
+      margin: 0 0 20px 0;
+      font-weight: 500;
+      //   transform: scaleY(0.85);
+    }
+    p {
+      line-height: 25px;
+      padding: 0 15px;
+    }
+  }
 }
