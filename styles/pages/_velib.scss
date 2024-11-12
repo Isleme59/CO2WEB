@@ -2,29 +2,28 @@
   font-family: Montserrat;
   height: 100vh;
   .velib__countdown {
-    margin-top: 300px;
+    margin-top: 270px;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: red;
     .velib__countdown-container {
-      background: blue;
       height: 40%;
-      width: 65%;
+      width: 70%;
       display: flex;
       justify-content: space-between;
       .velib__compteur {
         position: relative;
         height: 100%;
         width: 22%;
-        background: green;
+        background: rgb(78, 168, 112);
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
         padding-bottom: 7px;
-        font-size: 1.9rem;
+        font-size: 1.8rem;
+        font-family: Roboto;
         em {
           position: absolute;
           font-size: 0.45rem;
@@ -38,13 +37,14 @@
     margin: 20px 30px;
     text-align: center;
     h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin: 0 0 20px 0;
       font-weight: 500;
       //   transform: scaleY(0.85);
     }
     p {
-      line-height: 25px;
+      line-height: 20px;
+      font-size: 0.85rem;
       padding: 0 15px;
     }
   }
