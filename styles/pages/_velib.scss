@@ -1,14 +1,19 @@
 .velib {
+  background: $blanc;
   font-family: Montserrat;
   height: 100vh;
+  max-width: 400px;
+  min-width: 350px;
+  @include verticalCenter;
+  flex-direction: column;
+  margin: auto;
   .velib__countdown {
-    margin-top: 270px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 50px;
+    height: 130px;
+    width: 100%;
+    @include verticalCenter;
     .velib__countdown-container {
-      height: 40%;
+      height: 60px;
       width: 70%;
       display: flex;
       justify-content: space-between;
@@ -16,36 +21,36 @@
         position: relative;
         height: 100%;
         width: 22%;
-        background: rgb(78, 168, 112);
+        background: rgb(1,153,97);
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
         padding-bottom: 7px;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         font-family: Roboto;
+        user-select: none;
         em {
           position: absolute;
-          font-size: 0.45rem;
-          bottom: 5px;
+          font-size: 0.55rem;
+          bottom: 7px;
           letter-spacing: 0.5px;
         }
       }
     }
   }
   .velib__description {
-    margin: 20px 30px;
+    margin: 0px 30px 0px;
     text-align: center;
     h2 {
       font-size: 2rem;
       margin: 0 0 20px 0;
       font-weight: 500;
-      //   transform: scaleY(0.85);
     }
     p {
-      line-height: 20px;
-      font-size: 0.85rem;
-      padding: 0 15px;
+      line-height: 25px;
+      font-size: 0.9rem;
+      font-weight: 500;
     }
   }
 }
