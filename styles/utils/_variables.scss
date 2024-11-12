@@ -1,0 +1,27 @@
+$vert1: #019961ff;
+$vert2: #3dad5cff;
+$vert3: #79c258ff;
+$vert4: #b5f653ff;
+$noir: #030303ff;
+$blanc: #ffffffff;
+
+$mqDesktop: screen and
+	(
+		min-width: 1920px,
+	);
+$mqNotebook: screen and
+	(
+		min-width: 1366px,
+	)
+	and
+	(
+		max-width: 1919px,
+	);
+$mqTablet: screen and
+	(
+		min-width: 768px,
+	)
+	and
+	(
+		max-width: 1365px,
+	);
