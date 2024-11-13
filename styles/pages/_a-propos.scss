@@ -2,11 +2,50 @@
     overflow-x: hidden;
     margin: 20px;
 
-    .computer-block {
-        width: 100%;
+    h1 {
+        margin-bottom: 30px;
+    }
 
-        #computer {
+    p {
+        font-family: "Roboto regular", sans-serif;
+        font-size: large;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    hr {
+        width: 35%;
+        height: 2px;
+        background: linear-gradient(to left, $vert2, $vert4);
+        border: none;
+    }
+
+    .main-block {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 30px;
+
+        .computer-block {
             width: 75%;
+
+            #computer {
+                width: 100%;
+            }
         }
+
+        .right-arrow-block {
+            display: flex;
+            justify-content: flex-end;
+            width: 25%;
+
+            #right-arrow {
+                width: 50%;
+
+            }
+        }
+    }
+
+    #camping {
+        width: 100%;
     }
 }
