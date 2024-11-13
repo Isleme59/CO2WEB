@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="./styles/main.css">
 		<link rel="icon" type="image/x-icon" href="./img/favicon.svg">
 	</head>
-	<body>
+	<body id="calculateur">
 		<header>
 			<img src="./img/CO2WEB.svg" alt="logo">
 			<nav>
@@ -32,10 +32,55 @@
 					</li>
 				</ul>
 			</nav>
-			<img src="./img/hamburger.svg" alt="" id="hamburger">
-			<img src="./img/cross.svg" alt="" id="cross">
+			<img src="./img/hamburger.svg" alt="" class="no-desk" id="hamburger">
+			<img src="./img/cross.svg" alt="" class="no-desk" id="cross">
 		</header>
 		<main>
+			<h1>
+				Calculez vos &eacute;missions
+			</h1>
+			<div class="desk-deco" id="big-ring-green-1"></div>
+			<div class="desk-deco" id="medium-ring-green-2"></div>
+			<div class="desk-deco" id="small-ring-green-4"></div>
+			<img src="./img/leaf.svg" alt="leaf" class="desk-deco" id="leaf">
+			<img src="./img/leaves.svg" alt="leaves" class="desk-deco" id="leaves">
+			<img src="./img/fern.svg" alt="fern" class="desk-deco" id="fern">
+			<form action="#">
+				<label for="distance">Distance parcourue par jour &lpar;en km&rpar;</label>
+				<input type="number" name="distance" id="distance" placeholder="www.example.com">
+				<label for="working-days"></label>
+				<input type="number" name="working-days" id="working-days" placeholder="Nombre">
+				<input type="submit" value="Calculer maintenant">
+				<p class="small-text">En utilisant cette calculatrice d'&eacute;mission de carbone, vous acceptez que les informations soient inscrites et stock&eacute;es dans notre base de donn&eacute;es publique.</p>
+			</form>
 		</main>
+		<footer>
+			<hr>
+			<p class="no-desk">
+				Copyright &copy; 2022 CO2WEB.<br>All rights reserved.
+			</p>
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Accueil</a>
+					</li>
+					<li>
+						<a href="mode_d_emploi.html">Mode d'emploi</a>
+					</li>
+					<li>
+						<a href="trouver_un_velib.html">Trouver un velib</a>
+					</li>
+					<li>
+						<a href="calculateur.html" class="active">Calculateur</a>
+					</li>
+					<li>
+						<a href="a_propos.html">&Agrave; propos</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
 	</body>
 </html>
