@@ -41,7 +41,11 @@
           <!-- Eléments décoratifs hide en mobile -->
           <div id="top-left-leaves" class="contacts__bg-elements"></div>
           <div id="bottom-left-leaf" class="contacts__bg-elements"></div>
-          <div id="top-right-circles" class="contacts__bg-elements"></div>
+          <div id="top-right-circles" class="contacts__bg-elements">
+            <div id="circle-1"></div>
+            <div id="circle-2"></div>
+            <div id="circle-3"></div>
+          </div>
           <div id="bottom-right-leaf" class="contacts__bg-elements"></div>
           <!-- Eléments décoratifs hide en mobile -->
           <form action="">
@@ -51,9 +55,16 @@
               name="email"
               id="email"
               placeholder="votre@email.com"
+              required
             />
             <label for="tel">Téléphone</label>
-            <input type="tel" name="tel" id="tel" placeholder="Numéro" />
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Numéro"
+              required
+            />
             <div class="label__wrapped">
               <label for="surname">Votre nom</label>
               <label for="name">Votre prénom</label>
@@ -63,7 +74,13 @@
                 id="surname"
                 placeholder="Nom"
               />
-              <input type="text" name="name" id="name" placeholder="Prénom" />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Prénom"
+                required
+              />
             </div>
             <label for="message">Votre message</label>
             <textarea

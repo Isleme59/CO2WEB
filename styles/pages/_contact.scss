@@ -1,49 +1,94 @@
 .contact {
   margin: 50px 30px 30px;
-  /* Elements background cachés en mobile */
+@media #{$mqNotebookp} {
+  font-size: 25px;
+}
+  /* ELEMENTS BG CACHES EN MOBILE */
   .contacts__bg-elements {
     display: none;
     @media #{$mqTabletp} {
       &#top-left-leaves {
         display: block;
+        animation: apparition 2s forwards;
       }
       &#bottom-right-leaf {
         display: block;
+        animation: apparition 2s forwards;
       }
     }
     @media #{$mqNotebookp} {
-      &#bottom-left-leaf {
+      &#top-right-circles {
         display: block;
+        animation: circles-appear 2s forwards;
       }
     }
-  }
-  @media #{$mqNotebookp} {
-    &#top-right-circles {
-      display: block;
+    @media #{$mqDesktop} {
+      &#bottom-left-leaf {
+        display: block;
+        animation: apparition 2s forwards;
+      }
     }
   }
   #top-left-leaves {
     position: absolute;
     background-image: url("/img/leaves.svg");
     background-repeat: no-repeat;
-    z-index: 0;
     height: 500px;
     width: 500px;
     transform: scale(0.5) translate(-550px, -500px);
     z-index: -1;
+    transition: 1s;
+    @media #{$mqNotebookp} {
+      transform: scale(0.7) translate(-450px, -250px);
+    }
   }
   #bottom-left-leaf {
     position: absolute;
-    background-image: url("/img/cross.svg");
+    background-image: url("/img/leaf.svg");
     background-repeat: no-repeat;
-    z-index: 10;
+    z-index: -1;
     height: 500px;
     width: 500px;
-    transform: scale(0.5) translate(-550px, -500px);
-    z-index: -1;
+    transform: translate(-305px, 220px) rotate(-10deg);
+    transition: 1s;
   }
   #top-right-circles {
-    background: red;
+    opacity: 0;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    top: -400px;
+    right: -400px;
+    z-index: 1;
+    transition: 1s;
+    #circle-1 {
+      position: absolute;
+      border-radius: 50%;
+      height: 160px;
+      width: 160px;
+      border: 28px solid $vert1;
+      background: $blanc;
+      bottom: 0px;
+    }
+    #circle-2 {
+      position: absolute;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      border: 42px solid $vert3;
+      right: 110px;
+      bottom: -15px;
+
+    }
+    #circle-3 {
+      position: absolute;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      border: 35px solid $vert2;
+      right: 140px;
+      top: 170px;
+    }
   }
   #bottom-right-leaf {
     position: absolute;
@@ -53,13 +98,21 @@
     height: 500px;
     width: 500px;
     transform: scale(0.5) translate(780px, 250px) rotate(20deg);
+    transition: 1s;
+    @media #{$mqNotebookp} {
+      transform: scale(0.6) translate(980px, 250px) rotate(5deg);
+    }
+    @media #{$mqDesktop} {
+      transform: scale(0.7) translate(1130px, 150px) rotate(5deg);
+    }
   }
+  /* FIN ELEMENT BG CACHES EN MOBILE */
+
   @media #{$mqTabletp} {
     margin: 0;
     padding: 50px 50px;
   }
 
-  /* Elements background cachés en mobile*/
   h1 {
     font-size: 1.7rem;
     font-weight: 600;
@@ -69,17 +122,35 @@
       text-align: center;
       margin-bottom: 40px;
     }
+    @media #{$mqDesktop} {
+      font-size: 2.5rem;
+    }
   }
   .contact__form {
+    position: relative;
     height: 550px;
     color: $noir;
-    box-shadow: 0 0 20px 0px rgb(223, 223, 223);
     border-radius: 20px;
     background-color: $blanc;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      border-radius: inherit;
+      box-shadow: 0 0 25px 0px rgb(230, 230, 230);
+      width: 100%;
+      z-index: -2;
+    }
     @media #{$mqTabletp} {
-      height: 550px;
+      height: 600px;
       width: 600px;
       margin: auto;
+    }
+    @media #{$mqNotebookp} {
+      width: 800px;
+    }
+    @media #{$mqDesktop} {
+      width: 1000px;
     }
     .contact__form-container {
       height: 100%;
@@ -101,6 +172,39 @@
             transform: translateY(220px);
           }
         }
+        /* EXPLICATIONS CONCERNANT LE TRANSLATE */
+        /* J'aurais du passer par un grid dés le départ. Je le saurais au prochain projet.
+        Je n'ai pas envie de tout recommencer, donc je reste sur cette lancée car ça va fonctionner tout de même.
+        J'admets que le code est moche du coup.
+        Les éléments sont translates à chaque query, et donc c'est fait à la main.
+        J'ai tout de même pris le temps pour que ça fasse un résultat soigné.
+        Je vous prie de m'excuser pour ce code sale.
+        */
+        @media #{$mqDesktop} {
+          justify-content: space-between;
+          flex-direction: column;
+          height: 85%;
+          & > label:first-child {
+            //EMAIL
+            width: 45%;
+            transform: translate(0px,180px);
+          }
+          #email {
+            // EMAIL
+            width: 45%;
+            transform: translate(0px,180px);
+          }
+          & > label:nth-child(3) {
+            //TELEPHONE
+            width: 45%;
+            transform: translate(455px,50px);
+          }
+          #tel {
+            // TELEPHONE
+            width: 45%;
+            transform: translate(455px,50px);
+          }
+        }
         label,
         input,
         textarea {
@@ -108,8 +212,11 @@
           font-family: Roboto;
         }
         input::placeholder,
-        textarea::placeholder {
+      textarea::placeholder {
           color: lightgray;
+          @media #{$mqDesktop} {
+            font-size: 1.2rem;
+          }
         }
         label {
           display: block;
@@ -122,11 +229,15 @@
           margin-bottom: 30px;
           font-size: 0.95rem;
           padding-left: 3px;
+          @media #{$mqDesktop} {
+            font-size: 1.2rem;
+          }
         }
         .label__wrapped {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
+          width: 100%;
           input,
           label {
             width: 45%;
@@ -144,7 +255,10 @@
           padding-left: 3px;
           resize: none;
           @media #{$mqTabletp} {
-            height: 30px;
+            height: 25px;
+          }
+          @media #{$mqDesktop} {
+            font-size: 1.2rem;
           }
         }
         input[type="submit"] {
@@ -176,8 +290,35 @@
             font-size: 1.1rem;
             margin: auto;
           }
+          @media #{$mqNotebookp} {
+            margin: 0;
+            margin-left: auto;
+            min-width: 100px;
+            height: 50px;
+          }
         }
       }
     }
+  }
+}
+
+@keyframes apparition {
+  0% {
+    transform: translate(0px,0px);
+  }
+  100% {
+    transform: translate(inherit,inherit);;
+  }
+  
+}
+
+@keyframes circles-appear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
