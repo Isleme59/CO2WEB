@@ -19,10 +19,15 @@ const timerCountdown = () => {
     const secondsCounter = Math.floor(timeOut / 1000) % 60;
 
     day.innerHTML = dayCounter + "<em>Jours</em>";
-    hours.innerHTML = hoursCounter + "<em>Heures</em>";
-    minutes.innerHTML = minutesCounter + "<em>Minutes</em>";
+    hours.innerHTML =
+      (hoursCounter <= 0 ? "0" + hoursCounter : hoursCounter) +
+      "<em>Heures</em>";
+    minutes.innerHTML =
+      (minutesCounter <= 9 ? "0" + minutesCounter : minutesCounter) +
+      "<em>Minutes</em>";
     seconds.innerHTML =
-      (secondsCounter == 0 ? "00" : secondsCounter) + "<em>Secondes</em>";
+      (secondsCounter <= 9 ? "0" + secondsCounter : secondsCounter) +
+      "<em>Secondes</em>";
 
     timerCountdown();
   }, 1000);
