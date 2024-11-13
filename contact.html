@@ -21,19 +21,24 @@
             />
             <label for="tel">Téléphone</label>
             <input type="tel" name="tel" id="tel" placeholder="Numéro" />
-            <div>
+            <div class="label__wrapped">
               <label for="surname">Votre nom</label>
               <label for="name">Votre prénom</label>
+              <input
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="Nom"
+              />
+              <input type="text" name="name" id="name" placeholder="Prénom" />
             </div>
-            <input type="text" name="surname" id="surname" placeholder="Nom" />
-            <input type="text" name="name" id="name" placeholder="Prénom" />
             <label for="message">Votre message</label>
             <textarea
               name="message"
               id="message"
               placeholder="Message"
             ></textarea>
-            <input type="button" value="Envoyer" />
+            <input type="submit" value="Envoyer" />
           </form>
         </div>
       </div>
