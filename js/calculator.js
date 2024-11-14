@@ -16,12 +16,14 @@ let carbonAmount = document.getElementById("carbonAmount");
 
 function carbonPrint(event){
 	event.preventDefault();
-	distanceValue = DISTANCE.valueAsNumber
+	distanceValue = DISTANCE.valueAsNumber;
 	workingDaysValue = WORKINGDAYS.valueAsNumber;
-	carboneDist = distanceValue * 0.22;
+	carboneDist = distanceValue * 0.12;
 	daysPerMonth = workingDaysValue * 4.348;
 	total = Math.round((carboneDist * daysPerMonth) * 100) / 100;
 	console.log(total);
 	carbonAmount.innerHTML = total;
 }
 FORM.addEventListener("submit", carbonPrint);
+
+
