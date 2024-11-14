@@ -1,8 +1,8 @@
 .contact {
   margin: 50px 30px 30px;
-@media #{$mqNotebookp} {
-  font-size: 25px;
-}
+  @media #{$mqNotebookp} {
+    font-size: 25px;
+  }
   /* ELEMENTS BG CACHES EN MOBILE */
   .contacts__bg-elements {
     display: none;
@@ -78,7 +78,6 @@
       border: 42px solid $vert3;
       right: 110px;
       bottom: -15px;
-
     }
     #circle-3 {
       position: absolute;
@@ -133,12 +132,12 @@
     border-radius: 20px;
     background-color: $blanc;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       height: 100%;
+      width: 100%;
       border-radius: inherit;
       box-shadow: 0 0 25px 0px rgb(230, 230, 230);
-      width: 100%;
       z-index: -2;
     }
     @media #{$mqTabletp} {
@@ -187,22 +186,22 @@
           & > label:first-child {
             //EMAIL
             width: 45%;
-            transform: translate(0px,180px);
+            transform: translate(0px, 170px);
           }
           #email {
             // EMAIL
             width: 45%;
-            transform: translate(0px,180px);
+            transform: translate(0px, 170px);
           }
           & > label:nth-child(3) {
             //TELEPHONE
             width: 45%;
-            transform: translate(455px,50px);
+            transform: translate(455px, 50px);
           }
           #tel {
             // TELEPHONE
             width: 45%;
-            transform: translate(455px,50px);
+            transform: translate(455px, 50px);
           }
         }
         label,
@@ -212,7 +211,7 @@
           font-family: Roboto;
         }
         input::placeholder,
-      textarea::placeholder {
+        textarea::placeholder {
           color: lightgray;
           @media #{$mqDesktop} {
             font-size: 1.2rem;
@@ -255,7 +254,7 @@
           padding-left: 3px;
           resize: none;
           @media #{$mqTabletp} {
-            height: 25px;
+            height: 30px;
           }
           @media #{$mqDesktop} {
             font-size: 1.2rem;
@@ -304,12 +303,11 @@
 
 @keyframes apparition {
   0% {
-    transform: translate(0px,0px);
+    transform: translate(0px, 0px);
   }
   100% {
-    transform: translate(inherit,inherit);;
+    transform: translate(inherit, inherit);
   }
-  
 }
 
 @keyframes circles-appear {
