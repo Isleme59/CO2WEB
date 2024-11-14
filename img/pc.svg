@@ -1,97 +1,449 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="812.051" height="457.965" viewBox="0 0 812.051 457.965">
-  <defs>
-    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#929292"/>
-      <stop offset="0.014" stop-color="#c1c1c1"/>
-      <stop offset="0.027" stop-color="#b1b1b1"/>
-      <stop offset="0.049" stop-color="#9c9c9c"/>
-      <stop offset="0.071" stop-color="#a3a3a3"/>
-      <stop offset="0.091" stop-color="#afafaf"/>
-      <stop offset="1" stop-color="#cfcfcf"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="812.051"
+   height="457.965"
+   viewBox="0 0 812.051 457.965"
+   version="1.1"
+   id="svg51"
+   sodipodi:docname="pc.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview51"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="1.8397859"
+     inkscape:cx="396.78531"
+     inkscape:cy="50.27759"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Groupe_40" />
+  <defs
+     id="defs51">
+    <linearGradient
+       id="linearGradient53"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#79c258;stop-opacity:1;"
+         offset="0"
+         id="stop53" />
+      <stop
+         style="stop-color:#019961;stop-opacity:1;"
+         offset="1"
+         id="stop54" />
     </linearGradient>
-    <linearGradient id="linear-gradient-2" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0.005" stop-color="#f8f8f8"/>
-      <stop offset="0.064" stop-color="#d0d0d0"/>
-      <stop offset="0.503" stop-color="#f8f8f8"/>
-      <stop offset="0.866" stop-color="#d0d0d0"/>
-      <stop offset="0.876" stop-color="#d3d3d3"/>
-      <stop offset="0.951" stop-color="#e8e8e8"/>
-      <stop offset="1" stop-color="#f1f1f1"/>
+    <linearGradient
+       id="linear-gradient"
+       y1="0.5"
+       x2="1"
+       y2="0.5"
+       gradientUnits="objectBoundingBox">
+      <stop
+         offset="0"
+         stop-color="#929292"
+         id="stop1" />
+      <stop
+         offset="0.014"
+         stop-color="#c1c1c1"
+         id="stop2" />
+      <stop
+         offset="0.027"
+         stop-color="#b1b1b1"
+         id="stop3" />
+      <stop
+         offset="0.049"
+         stop-color="#9c9c9c"
+         id="stop4" />
+      <stop
+         offset="0.071"
+         stop-color="#a3a3a3"
+         id="stop5" />
+      <stop
+         offset="0.091"
+         stop-color="#afafaf"
+         id="stop6" />
+      <stop
+         offset="1"
+         stop-color="#cfcfcf"
+         id="stop7" />
     </linearGradient>
-    <linearGradient id="linear-gradient-3" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#cfcfcf"/>
-      <stop offset="0.909" stop-color="#afafaf"/>
-      <stop offset="0.929" stop-color="#a3a3a3"/>
-      <stop offset="0.951" stop-color="#9c9c9c"/>
-      <stop offset="0.973" stop-color="#b1b1b1"/>
-      <stop offset="0.986" stop-color="#c1c1c1"/>
-      <stop offset="1" stop-color="#929292"/>
+    <linearGradient
+       id="linear-gradient-2"
+       y1="0.5"
+       x2="1"
+       y2="0.5"
+       gradientUnits="objectBoundingBox">
+      <stop
+         offset="0.005"
+         stop-color="#f8f8f8"
+         id="stop8" />
+      <stop
+         offset="0.064"
+         stop-color="#d0d0d0"
+         id="stop9" />
+      <stop
+         offset="0.503"
+         stop-color="#f8f8f8"
+         id="stop10" />
+      <stop
+         offset="0.866"
+         stop-color="#d0d0d0"
+         id="stop11" />
+      <stop
+         offset="0.876"
+         stop-color="#d3d3d3"
+         id="stop12" />
+      <stop
+         offset="0.951"
+         stop-color="#e8e8e8"
+         id="stop13" />
+      <stop
+         offset="1"
+         stop-color="#f1f1f1"
+         id="stop14" />
     </linearGradient>
-    <linearGradient id="linear-gradient-4" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#666"/>
-      <stop offset="0.014" stop-color="#d5d5d5"/>
-      <stop offset="0.021" stop-color="#bdbdbd"/>
-      <stop offset="0.04" stop-color="#858585"/>
-      <stop offset="0.049" stop-color="#707070"/>
-      <stop offset="0.057" stop-color="#787878"/>
-      <stop offset="0.07" stop-color="#8d8d8d"/>
-      <stop offset="0.087" stop-color="#b1b1b1"/>
-      <stop offset="0.091" stop-color="#bcbcbc"/>
-      <stop offset="1" stop-color="#f1f1f1"/>
+    <linearGradient
+       id="linear-gradient-3"
+       y1="0.5"
+       x2="1"
+       y2="0.5"
+       gradientUnits="objectBoundingBox">
+      <stop
+         offset="0"
+         stop-color="#cfcfcf"
+         id="stop15" />
+      <stop
+         offset="0.909"
+         stop-color="#afafaf"
+         id="stop16" />
+      <stop
+         offset="0.929"
+         stop-color="#a3a3a3"
+         id="stop17" />
+      <stop
+         offset="0.951"
+         stop-color="#9c9c9c"
+         id="stop18" />
+      <stop
+         offset="0.973"
+         stop-color="#b1b1b1"
+         id="stop19" />
+      <stop
+         offset="0.986"
+         stop-color="#c1c1c1"
+         id="stop20" />
+      <stop
+         offset="1"
+         stop-color="#929292"
+         id="stop21" />
     </linearGradient>
-    <linearGradient id="linear-gradient-5" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#f1f1f1"/>
-      <stop offset="0.909" stop-color="#bcbcbc"/>
-      <stop offset="0.913" stop-color="#b1b1b1"/>
-      <stop offset="0.93" stop-color="#8d8d8d"/>
-      <stop offset="0.943" stop-color="#787878"/>
-      <stop offset="0.951" stop-color="#707070"/>
-      <stop offset="0.96" stop-color="#858585"/>
-      <stop offset="0.979" stop-color="#bdbdbd"/>
-      <stop offset="0.986" stop-color="#d5d5d5"/>
-      <stop offset="1" stop-color="#666"/>
+    <linearGradient
+       id="linear-gradient-4"
+       y1="0.5"
+       x2="1"
+       y2="0.5"
+       gradientUnits="objectBoundingBox">
+      <stop
+         offset="0"
+         stop-color="#666"
+         id="stop22" />
+      <stop
+         offset="0.014"
+         stop-color="#d5d5d5"
+         id="stop23" />
+      <stop
+         offset="0.021"
+         stop-color="#bdbdbd"
+         id="stop24" />
+      <stop
+         offset="0.04"
+         stop-color="#858585"
+         id="stop25" />
+      <stop
+         offset="0.049"
+         stop-color="#707070"
+         id="stop26" />
+      <stop
+         offset="0.057"
+         stop-color="#787878"
+         id="stop27" />
+      <stop
+         offset="0.07"
+         stop-color="#8d8d8d"
+         id="stop28" />
+      <stop
+         offset="0.087"
+         stop-color="#b1b1b1"
+         id="stop29" />
+      <stop
+         offset="0.091"
+         stop-color="#bcbcbc"
+         id="stop30" />
+      <stop
+         offset="1"
+         stop-color="#f1f1f1"
+         id="stop31" />
     </linearGradient>
-    <linearGradient id="linear-gradient-6" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#9f9f9f"/>
-      <stop offset="0.04" stop-color="#acacac"/>
-      <stop offset="0.514" stop-color="#e5e5e5"/>
-      <stop offset="0.963" stop-color="#acacac"/>
-      <stop offset="1" stop-color="#9f9f9f"/>
+    <linearGradient
+       id="linear-gradient-5"
+       y1="0.5"
+       x2="1"
+       y2="0.5"
+       gradientUnits="objectBoundingBox">
+      <stop
+         offset="0"
+         stop-color="#f1f1f1"
+         id="stop32" />
+      <stop
+         offset="0.909"
+         stop-color="#bcbcbc"
+         id="stop33" />
+      <stop
+         offset="0.913"
+         stop-color="#b1b1b1"
+         id="stop34" />
+      <stop
+         offset="0.93"
+         stop-color="#8d8d8d"
+         id="stop35" />
+      <stop
+         offset="0.943"
+         stop-color="#787878"
+         id="stop36" />
+      <stop
+         offset="0.951"
+         stop-color="#707070"
+         id="stop37" />
+      <stop
+         offset="0.96"
+         stop-color="#858585"
+         id="stop38" />
+      <stop
+         offset="0.979"
+         stop-color="#bdbdbd"
+         id="stop39" />
+      <stop
+         offset="0.986"
+         stop-color="#d5d5d5"
+         id="stop40" />
+      <stop
+         offset="1"
+         stop-color="#666"
+         id="stop41" />
     </linearGradient>
-    <linearGradient id="linear-gradient-7" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#575757"/>
-      <stop offset="0.739" stop-color="#b9b9b9"/>
-      <stop offset="0.847" stop-color="#b5b5b5"/>
-      <stop offset="0.936" stop-color="#ababab"/>
-      <stop offset="1" stop-color="#9f9f9f"/>
+    <linearGradient
+       id="linear-gradient-6"
+       y1="0.5"
+       x2="1"
+       y2="0.5"
+       gradientUnits="objectBoundingBox">
+      <stop
+         offset="0"
+         stop-color="#9f9f9f"
+         id="stop42" />
+      <stop
+         offset="0.04"
+         stop-color="#acacac"
+         id="stop43" />
+      <stop
+         offset="0.514"
+         stop-color="#e5e5e5"
+         id="stop44" />
+      <stop
+         offset="0.963"
+         stop-color="#acacac"
+         id="stop45" />
+      <stop
+         offset="1"
+         stop-color="#9f9f9f"
+         id="stop46" />
     </linearGradient>
+    <linearGradient
+       id="linear-gradient-7"
+       x1="0.5"
+       y1="1"
+       x2="0.5"
+       gradientUnits="objectBoundingBox">
+      <stop
+         offset="0"
+         stop-color="#575757"
+         id="stop47" />
+      <stop
+         offset="0.739"
+         stop-color="#b9b9b9"
+         id="stop48" />
+      <stop
+         offset="0.847"
+         stop-color="#b5b5b5"
+         id="stop49" />
+      <stop
+         offset="0.936"
+         stop-color="#ababab"
+         id="stop50" />
+      <stop
+         offset="1"
+         stop-color="#9f9f9f"
+         id="stop51" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient53"
+       id="linearGradient54"
+       x1="-645.86914"
+       y1="460.91061"
+       x2="-643.51666"
+       y2="499.31262"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0023958,0,0,1,1.544493,-0.85362474)" />
   </defs>
-  <g id="Groupe_40" data-name="Groupe 40" transform="translate(1054.009 -435.411)">
-    <g id="Groupe_39" data-name="Groupe 39">
-      <g id="Groupe_34" data-name="Groupe 34">
-        <g id="Groupe_33" data-name="Groupe 33">
-          <rect id="Rectangle_9" data-name="Rectangle 9" width="652.376" height="11.575" transform="translate(-970.878 857.01)"/>
-          <path id="Tracé_70" data-name="Tracé 70" d="M-318.5,452.418V857.01H-970.879V452.418a17.1,17.1,0,0,1,17.148-17.007h618.08A17.1,17.1,0,0,1-318.5,452.418Z"/>
-          <path id="Tracé_71" data-name="Tracé 71" d="M-315.6,868.585v1.058h-2.9v0H-970.878v0h-2.867v-1.058Z"/>
+  <g
+     id="Groupe_40"
+     data-name="Groupe 40"
+     transform="translate(1054.009 -435.411)">
+    <g
+       id="Groupe_39"
+       data-name="Groupe 39">
+      <g
+         id="Groupe_34"
+         data-name="Groupe 34">
+        <g
+           id="Groupe_33"
+           data-name="Groupe 33">
+          <path
+             id="Rectangle_9"
+             transform="translate(-970.878 857.01)"
+             d="M 0,0 H 652.37598 V 11.575 H 0 Z" />
+          <path
+             id="Tracé_70"
+             data-name="Tracé 70"
+             d="M -318.5,452.418 V 857.01 H -970.879 V 452.418 c 0,-9.42663 7.72137,-17.007 17.148,-17.007 h 618.08 c 9.4278,0 17.151,7.5792 17.151,17.007 z"
+             sodipodi:nodetypes="sccssss" />
+          <path
+             id="Tracé_71"
+             data-name="Tracé 71"
+             d="m -315.6,868.585 v 1.058 h -658.145 v -1.058 z"
+             sodipodi:nodetypes="ccccc" />
         </g>
       </g>
-      <g id="Groupe_38" data-name="Groupe 38">
-        <g id="Groupe_37" data-name="Groupe 37">
-          <g id="Groupe_35" data-name="Groupe 35">
-            <rect id="Rectangle_10" data-name="Rectangle 10" width="406.026" height="12.29" transform="translate(-1054.009 870.257)" fill="url(#linear-gradient)"/>
-            <rect id="Rectangle_11" data-name="Rectangle 11" width="812.051" height="0.613" transform="translate(-1054.009 869.644)" fill="url(#linear-gradient-2)"/>
-            <rect id="Rectangle_12" data-name="Rectangle 12" width="406.026" height="12.29" transform="translate(-647.984 870.257)" fill="url(#linear-gradient-3)"/>
+      <g
+         id="Groupe_38"
+         data-name="Groupe 38">
+        <g
+           id="Groupe_37"
+           data-name="Groupe 37">
+          <g
+             id="Groupe_35"
+             data-name="Groupe 35">
+            <rect
+               id="Rectangle_10"
+               data-name="Rectangle 10"
+               width="406.026"
+               height="12.29"
+               transform="translate(-1054.009 870.257)"
+               fill="url(#linear-gradient)" />
+            <rect
+               id="Rectangle_11"
+               data-name="Rectangle 11"
+               width="812.051"
+               height="0.613"
+               transform="translate(-1054.009 869.644)"
+               fill="url(#linear-gradient-2)" />
+            <rect
+               id="Rectangle_12"
+               data-name="Rectangle 12"
+               width="406.026"
+               height="12.29"
+               transform="translate(-647.984 870.257)"
+               fill="url(#linear-gradient-3)" />
           </g>
-          <g id="Groupe_36" data-name="Groupe 36">
-            <rect id="Rectangle_13" data-name="Rectangle 13" width="406.026" height="11.564" transform="translate(-1054.009 870.257)" fill="url(#linear-gradient-4)"/>
-            <rect id="Rectangle_14" data-name="Rectangle 14" width="406.026" height="11.564" transform="translate(-647.984 870.257)" fill="url(#linear-gradient-5)"/>
+          <g
+             id="Groupe_36"
+             data-name="Groupe 36">
+            <path
+               id="Rectangle_13"
+               transform="translate(-1054.009 870.257)"
+               style="fill:url(#linear-gradient-4)"
+               d="M 0,0 H 406.026 V 11.564 H 0 Z" />
+            <path
+               id="Rectangle_14"
+               transform="translate(-647.984 870.257)"
+               style="fill:url(#linear-gradient-5)"
+               d="M 0,0 H 406.026 V 11.564 H 0 Z" />
           </g>
-          <path id="Tracé_72" data-name="Tracé 72" d="M-590.193,869.647a9.354,9.354,0,0,1-2.758,6.653,9.372,9.372,0,0,1-6.652,2.757h-96.769a9.409,9.409,0,0,1-9.4-9.41Z" fill="url(#linear-gradient-6)"/>
-          <image id="Rectangle_15" data-name="Rectangle 15" width="118" height="11" transform="translate(-707 869)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAALCAYAAACqG3kOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADTSURBVFhH7ZjLCoMwEEWNKz+mtKX0//eFUlrbfzG79N5pJsRHF4LQJswBuZMxinKIim4YhlcDuq7bMY2y8d73iLb9DI3aMLGVYmIrpdV3K57N8q41ygUOH0w6tRVbKSI2W7VPplEecHePpTBbsSa3PODsFksu0j3ThRCkQTKp0tRJxn8CX1eEixu/l47sk5FYEuXmTZV8kJHxU+DnglCZaYOfEzIxE6vgBPyDQWaSI0v16rnO8brWHxfZYu5WyI18YbovH2u9lNNafaUxhJ7ZGNM0bxIiVi7DfGKrAAAAAElFTkSuQmCC"/>
+          <path
+             id="Tracé_72"
+             data-name="Tracé 72"
+             d="m -590.193,869.647 c 0.005,2.49688 -0.99159,4.88827 -2.758,6.653 -1.76578,1.7641 -4.156,2.757 -6.652,2.757 h -96.769 c -5.19332,0 -9.40055,-4.21668 -9.4,-9.41 z"
+             fill="url(#linear-gradient-6)"
+             sodipodi:nodetypes="cssscc" />
+          <image
+             id="Rectangle_15"
+             data-name="Rectangle 15"
+             width="118"
+             height="11"
+             transform="translate(-707 869)"
+             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHYAAAALCAYAAACqG3kOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADTSURBVFhH7ZjLCoMwEEWNKz+mtKX0//eFUlrbfzG79N5pJsRHF4LQJswBuZMxinKIim4YhlcDuq7bMY2y8d73iLb9DI3aMLGVYmIrpdV3K57N8q41ygUOH0w6tRVbKSI2W7VPplEecHePpTBbsSa3PODsFksu0j3ThRCkQTKp0tRJxn8CX1eEixu/l47sk5FYEuXmTZV8kJHxU+DnglCZaYOfEzIxE6vgBPyDQWaSI0v16rnO8brWHxfZYu5WyI18YbovH2u9lNNafaUxhJ7ZGNM0bxIiVi7DfGKrAAAAAElFTkSuQmCC" />
         </g>
-        <path id="Tracé_73" data-name="Tracé 73" d="M-1054.009,882.546a362.333,362.333,0,0,0,88.194,10.83h635.663a362.339,362.339,0,0,0,88.194-10.83h-812.051Z" fill="url(#linear-gradient-7)"/>
+        <path
+           id="Tracé_73"
+           data-name="Tracé 73"
+           d="m -1054.009,882.546 c 28.8423,7.21468 58.46301,10.83 88.194,10.83 h 635.663 c 29.73099,0 59.35165,-3.61538 88.194,-10.83 z"
+           fill="url(#linear-gradient-7)"
+           sodipodi:nodetypes="csscc" />
       </g>
     </g>
-    <rect id="Rectangle_16" data-name="Rectangle 16" width="625.382" height="386.948" transform="translate(-957.384 460.057)" fill="#fff"/>
+    <path
+       id="Rectangle_16"
+       style="fill:#ffffff"
+       transform="translate(-957.384 460.057)"
+       d="M 0,0 H 625.38202 V 386.948 H 0 Z" />
+    <path
+       id="rect51"
+       style="fill:url(#linearGradient54);stroke-width:0.315029"
+       d="m -957.38397,460.05701 h 625.38202 v 38.402 h -625.38202 z" />
+    <path
+       id="rect54"
+       style="fill:#d9d9d9;stroke-width:0.412011"
+       d="m -896.6366,560.91064 h 238.77669 v 172.0371 H -896.6366 Z" />
+    <path
+       id="rect56"
+       style="fill:#d9d9d9;stroke-width:0.132655"
+       transform="scale(1,-1)"
+       d="m -648.6366,-612.9425 h 186.40082 v 22.84499 H -648.6366 Z" />
+    <path
+       id="rect57"
+       style="fill:#ffffff;stroke-width:0.158391"
+       d="m -891.3603,466.25223 h 207.38431 c 7.20521,0 13.00579,5.80058 13.00579,13.00579 0,7.20521 -5.80058,13.00579 -13.00579,13.00579 H -891.3603 c -7.20521,0 -13.00579,-5.80058 -13.00579,-13.00579 0,-7.20521 5.80058,-13.00579 13.00579,-13.00579 z" />
+    <path
+       id="rect58"
+       style="fill:#ffffff;stroke-width:0.0846045"
+       d="m -642.07905,466.25223 h 40.57994 c 7.2052,0 13.00579,5.80058 13.00579,13.00579 0,7.20521 -5.80059,13.00579 -13.00579,13.00579 h -40.57994 c -7.20521,0 -13.00579,-5.80058 -13.00579,-13.00579 0,-7.20521 5.80058,-13.00579 13.00579,-13.00579 z" />
+    <path
+       id="rect60"
+       style="fill:#d9d9d9;stroke-width:0.149736"
+       transform="scale(1,-1)"
+       d="m -648.6366,-583.75586 h 237.49373 v 22.84516 H -648.6366 Z" />
+    <path
+       id="rect63"
+       style="fill:#d9d9d9;stroke-width:0.117909"
+       transform="scale(1,-1)"
+       d="m -648.6366,-671.3161 h 147.26584 v 22.845 H -648.6366 Z" />
+    <path
+       id="rect64"
+       style="fill:#d9d9d9;stroke-width:0.145741"
+       transform="scale(1,-1)"
+       d="m -648.6366,-642.12927 h 224.99227 v 22.845 H -648.6366 Z" />
   </g>
 </svg>
