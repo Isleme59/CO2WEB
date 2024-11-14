@@ -1,9 +1,69 @@
+//tags
+#calc-main{
+	padding: 0 1rem;
+	h1{
+		font-size: 1.75rem;
+		margin: 1rem 0;
+	}
+}
+form{
+	padding: 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0.5rem 0 #00000020;
+	background-color: $blanc;
+	font-size: 1rem;
+	font-family: Montserrat;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	label{
+		font-size: 0.8rem;
+	}
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+	   -webkit-appearance: none;
+	   margin: 0;
+	}
+	input[type=number]{
+   	 -moz-appearance: textfield;
+	}
+	input[type=text],
+	input[type=email],
+	input[type=tel],
+	input[type=number]{
+		border-width: 0 0 1px 0;
+		border-color: #a0a0a0ff;
+	}
+	input[type=submit]{
+		border: none;
+		border-radius: 500px;
+		padding: 0.5rem;
+		background: linear-gradient(160deg, $vert4 1%, $vert3 20%, $vert1 100%);
+		color: $blanc;
+	}
+	input{
+		font-size: 1.4rem;
+		outline: none;
+		margin: 0.5rem 0;
+		font-family: Montserrat;
+	}
+}
+
+//classes
 .display{
 	display: block;
 }
 .no-display{
 	display: none;
 }
+.desk-deco{
+	display: none;
+}
+.small-text{
+	font-size: 0.75rem;
+}
+
+//id
 #popupbg{
 	position: absolute;
 	width: 100vw;
@@ -20,4 +80,11 @@
 	background-color: $blanc;
 	padding: 2rem;
 	border-radius: 2rem;
+}
+
+//media query
+@media #{$mqNotebookp}{
+	.desk-deco{
+		display:block;
+	}
 }
