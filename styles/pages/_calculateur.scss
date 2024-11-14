@@ -1,0 +1,23 @@
+.display{
+	display: block;
+}
+.no-display{
+	display: none;
+}
+#popupbg{
+	position: absolute;
+	width: 100vw;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+#popup{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50vh;
+	left: 50vw;
+	z-index: 1;
+	background-color: $blanc;
+	padding: 2rem;
+	border-radius: 2rem;
+}
