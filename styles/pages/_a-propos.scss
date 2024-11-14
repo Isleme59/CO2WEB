@@ -1,51 +1,97 @@
 #a-propos {
     overflow-x: hidden;
-    margin: 20px;
+    width: 200vw;
 
     h1 {
         margin-bottom: 30px;
+        position: sticky;
+        width: 100%;
     }
 
-    p {
-        font-family: "Roboto regular", sans-serif;
-        font-size: large;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    hr {
-        width: 35%;
-        height: 2px;
-        background: linear-gradient(to left, $vert2, $vert4);
-        border: none;
-    }
-
-    .main-block {
+    main {
         display: flex;
-        flex-direction: row;
-        padding-bottom: 30px;
 
-        .computer-block {
-            width: 75%;
+        .first-slide {
+            width: 100vw;
+        }
+
+        .second-slide {
+            width: 100vw;
+
+            #left-arrow {
+                position: absolute;
+            }
+        }
+
+
+
+        .paragraph {
+            margin: 0 2rem 0 2rem;
+        }
+
+
+        p {
+            font-family: "Roboto regular", sans-serif;
+            font-size: large;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        hr {
+            width: 35%;
+            height: 2px;
+            background: linear-gradient(to left, $vert2, $vert4);
+            border: none;
+            margin-left: 0;
+        }
+
+        .main-block {
+            position: relative;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;
+
 
             #computer {
-                width: 100%;
+                width: 220px;
+                position: absolute;
+                top: 50px;
+                left: 30px;
             }
-        }
 
-        .right-arrow-block {
-            display: flex;
-            justify-content: flex-end;
-            width: 25%;
+            #leaves {
+                width: 250px;
+                position: absolute;
+                top: -30px;
+                left: 15px;
+            }
 
             #right-arrow {
-                width: 50%;
+                width: 2.5rem;
+                position: absolute;
+                right: 10px;
+                top: 45px;
+
+
+            }
+
+            .green-block {
+                width: 281px;
+                height: 150px;
+                background-color: $vert2;
+                position: absolute;
+                border-radius: 0 500px 500px 0;
+                background: linear-gradient(160deg,
+                        $vert4 1%,
+                        $vert3 20%,
+                        $vert1 100%);
 
             }
         }
-    }
 
-    #camping {
-        width: 100%;
+        #camping {
+            width: 100%;
+        }
     }
 }
