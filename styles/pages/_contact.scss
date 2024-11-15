@@ -66,27 +66,29 @@
       border-radius: 50%;
       height: 160px;
       width: 160px;
-      border: 28px solid $vert1;
+      border: 35px solid $vert1;
       background: $blanc;
       bottom: 0px;
     }
+
     #circle-2 {
       position: absolute;
       border-radius: 50%;
       height: 60px;
       width: 60px;
-      border: 42px solid $vert3;
-      right: 110px;
+      border: 35px solid $vert3;
+      right: 120px;
       bottom: -15px;
     }
+
     #circle-3 {
       position: absolute;
       border-radius: 50%;
       height: 100px;
       width: 100px;
       border: 35px solid $vert2;
-      right: 140px;
-      top: 170px;
+      right: 110px;
+      top: 190px;
     }
   }
   #bottom-right-leaf {
