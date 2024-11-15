@@ -10,3 +10,15 @@ $mqNotebook: "screen and (min-width: 1366px) and (max-width: 1919px)";
 $mqTablet: "screen and (min-width: 768px) and (max-width: 1365px)";
 $mqNotebookp: "screen and (min-width: 1366px)";
 $mqTabletp: "screen and (min-width: 768px)";
+
+%shadow {
+	box-shadow: 0 0 0.5rem 0 #00000020;
+}
+
+%shadow-green {
+	box-shadow: 0 0.5rem 0.5rem 0 #3dad5c80;
+}
+
+%shadow-light-green {
+	box-shadow: 0 0.5rem 0.5rem 0 #79c25880;
+}
