@@ -7,10 +7,12 @@
 	align-items: center;
 	overflow-x: hidden;
 	z-index: 0;
+	min-height: 100vh;
 
 	h1 {
 		font-size: 1.75rem;
 		margin: 70px 0 1rem 0;
+		line-height: 2rem;
 	}
 
 	form {
@@ -18,7 +20,7 @@
 		padding: 1rem;
 		box-sizing: border-box;
 		border-radius: 0.5rem;
-		box-shadow: 0 0 0.5rem 0 #00000020;
+		@extend %shadow;
 		background-color: $blanc;
 		font-size: 1rem;
 		font-family: Montserrat;
@@ -26,6 +28,7 @@
 		display: flex;
 		flex-direction: column;
 		z-index: 0;
+		width: 90vw;
 
 		label {
 			font-size: 0.8rem;
@@ -53,8 +56,14 @@
 			border: none;
 			border-radius: 500px;
 			padding: 0.5rem 1rem;
-			background: linear-gradient(160deg, $vert4 1%, $vert3 20%, $vert1 100%);
+			background: linear-gradient(160deg, $vert4 0%, $vert3 33%, $vert2 67%, $vert1 100%);
+			@extend %shadow-light-green;
 			color: $blanc;
+
+			&:active {
+				background: linear-gradient($vert1 0%, $vert1 100%);
+				@extend %shadow-green;
+			}
 		}
 
 		input {
@@ -66,7 +75,6 @@
 	}
 
 	//classes
-
 	//id
 	#popupbg {
 		position: absolute;
@@ -77,6 +85,7 @@
 	}
 
 	#popup {
+		font-family: Montserrat;
 		position: absolute;
 		transform: translate(-50%, -50%);
 		top: 50vh;
@@ -85,6 +94,9 @@
 		background-color: $blanc;
 		padding: 2rem;
 		border-radius: 2rem;
+		width: 90vw;
+		box-sizing: border-box;
+		@extend %shadow;
 	}
 
 	//media query
