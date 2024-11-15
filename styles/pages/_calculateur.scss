@@ -11,7 +11,7 @@
 
 	h1 {
 		font-size: 1.75rem;
-		margin: 70px 0 1rem 0;
+		margin: 1rem 0;
 		line-height: 2rem;
 	}
 
@@ -27,8 +27,10 @@
 		font-weight: 400;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-evenly;
 		z-index: 0;
 		width: 90vw;
+		height: 350px;
 
 		label {
 			font-size: 0.8rem;
@@ -50,10 +52,22 @@
 		input[type=number] {
 			border-width: 0 0 1px 0;
 			border-color: #a0a0a0ff;
+
+			&::placeholder {
+				color: #c0c0c080;
+			}
+		}
+
+		input {
+			font-size: 1rem;
+			outline: none;
+			margin: 0.5rem 0;
+			font-family: Montserrat;
 		}
 
 		input[type=submit] {
 			border: none;
+			font-size: 1.4rem;
 			border-radius: 500px;
 			padding: 0.5rem 1rem;
 			background: linear-gradient(160deg, $vert4 0%, $vert3 33%, $vert2 67%, $vert1 100%);
@@ -66,11 +80,11 @@
 			}
 		}
 
-		input {
-			font-size: 1.4rem;
-			outline: none;
-			margin: 0.5rem 0;
-			font-family: Montserrat;
+
+		p.small-text {
+			width: 90%;
+			text-align: center;
+			align-self: center;
 		}
 	}
 
