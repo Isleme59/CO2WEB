@@ -1,12 +1,14 @@
 //tags
-#calc-main{
+#calc-main {
 	padding: 0 1rem;
-	h1{
+
+	h1 {
 		font-size: 1.75rem;
 		margin: 1rem 0;
 	}
 }
-form{
+
+form {
 	padding: 1rem;
 	border-radius: 0.5rem;
 	box-shadow: 0 0 0.5rem 0 #00000020;
@@ -16,32 +18,38 @@ form{
 	font-weight: 400;
 	display: flex;
 	flex-direction: column;
-	label{
+
+	label {
 		font-size: 0.8rem;
 	}
+
 	input::-webkit-outer-spin-button,
 	input::-webkit-inner-spin-button {
-	   -webkit-appearance: none;
-	   margin: 0;
+		-webkit-appearance: none;
+		margin: 0;
 	}
-	input[type=number]{
-   	 -moz-appearance: textfield;
+
+	input[type=number] {
+		-moz-appearance: textfield;
 	}
+
 	input[type=text],
 	input[type=email],
 	input[type=tel],
-	input[type=number]{
+	input[type=number] {
 		border-width: 0 0 1px 0;
 		border-color: #a0a0a0ff;
 	}
-	input[type=submit]{
+
+	input[type=submit] {
 		border: none;
 		border-radius: 500px;
 		padding: 0.5rem;
 		background: linear-gradient(160deg, $vert4 1%, $vert3 20%, $vert1 100%);
 		color: $blanc;
 	}
-	input{
+
+	input {
 		font-size: 1.4rem;
 		outline: none;
 		margin: 0.5rem 0;
@@ -50,28 +58,32 @@ form{
 }
 
 //classes
-.display{
+.display {
 	display: block;
 }
-.no-display{
+
+.no-display {
 	display: none;
 }
-.desk-deco{
+
+.desk-deco {
 	display: none;
 }
-.small-text{
+
+.small-text {
 	font-size: 0.75rem;
 }
 
 //id
-#popupbg{
+#popupbg {
 	position: absolute;
 	width: 100vw;
 	height: 100%;
 	top: 0;
 	left: 0;
 }
-#popup{
+
+#popup {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	top: 50vh;
@@ -83,8 +95,51 @@ form{
 }
 
 //media query
-@media #{$mqNotebookp}{
-	.desk-deco{
-		display:block;
+@media #{$mqNotebookp} {
+	.desk-deco {
+		display: block;
+	}
+
+	#top-right-circles {
+		display: block;
+		animation: circles-appear 0.5s forwards;
+		opacity: 0;
+		position: absolute;
+		height: 500px;
+		width: 500px;
+		top: -400px;
+		right: -400px;
+		z-index: 1;
+		transition: 1s;
+
+		#circle-1 {
+			position: absolute;
+			border-radius: 50%;
+			height: 160px;
+			width: 160px;
+			border: 28px solid $vert1;
+			background: $blanc;
+			bottom: 0px;
+		}
+
+		#circle-2 {
+			position: absolute;
+			border-radius: 50%;
+			height: 60px;
+			width: 60px;
+			border: 42px solid $vert3;
+			right: 110px;
+			bottom: -15px;
+		}
+
+		#circle-3 {
+			position: absolute;
+			border-radius: 50%;
+			height: 100px;
+			width: 100px;
+			border: 35px solid $vert2;
+			right: 140px;
+			top: 170px;
+		}
 	}
 }
