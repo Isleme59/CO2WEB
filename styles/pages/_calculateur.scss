@@ -1,66 +1,64 @@
-//tags
-#calc-main {
-	padding: 0 1rem;
-
-	h1 {
-		font-size: 1.75rem;
-		margin: 1rem 0;
-	}
-}
-
-form {
-	padding: 1rem;
-	border-radius: 0.5rem;
-	box-shadow: 0 0 0.5rem 0 #00000020;
+header {
+	position: fixed;
+	padding: 0;
+	z-index: 900;
 	background-color: $blanc;
-	font-size: 1rem;
-	font-family: Montserrat;
-	font-weight: 400;
-	display: flex;
-	flex-direction: column;
+	width: 100vw;
+	height: 70px;
+	box-sizing: border-box;
 
-	label {
-		font-size: 0.8rem;
+	img {
+		height: 2rem;
+		margin: 1rem;
+
+		&#logo {
+			float: left;
+		}
+
+		&#cross,
+		&#hamburger {
+			float: right;
+		}
 	}
 
-	input::-webkit-outer-spin-button,
-	input::-webkit-inner-spin-button {
-		-webkit-appearance: none;
-		margin: 0;
-	}
+	nav {
+		&.display {
+			width: 100vw;
+			height: 90vh;
+			padding: 0 1rem 25vh;
+			background-color: $blanc;
+			z-index: 900;
 
-	input[type=number] {
-		-moz-appearance: textfield;
-	}
+			a {
+				color: $vert2;
+				font-weight: 500;
 
-	input[type=text],
-	input[type=email],
-	input[type=tel],
-	input[type=number] {
-		border-width: 0 0 1px 0;
-		border-color: #a0a0a0ff;
-	}
+				&.active {
+					font-weight: 600;
+				}
+			}
 
-	input[type=submit] {
-		border: none;
-		border-radius: 500px;
-		padding: 0.5rem;
-		background: linear-gradient(160deg, $vert4 1%, $vert3 20%, $vert1 100%);
-		color: $blanc;
-	}
+			ul {
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
 
-	input {
-		font-size: 1.4rem;
-		outline: none;
-		margin: 0.5rem 0;
-		font-family: Montserrat;
+				li {
+					border-style: solid;
+					border-width: 0 0 1px 0;
+					border-color: $vert2;
+					padding: 1rem;
+				}
+			}
+
+			box-sizing: border-box;
+			overflow: hidden;
+			text-align: center;
+		}
 	}
 }
 
-//classes
-.display {
-	display: block;
-}
 
 .no-display {
 	display: none;
@@ -74,72 +72,151 @@ form {
 	font-size: 0.75rem;
 }
 
-//id
-#popupbg {
-	position: absolute;
-	width: 100vw;
-	height: 100%;
-	top: 0;
-	left: 0;
-}
+#calc-main {
+	//tags
+	padding: 0 1rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-x: hidden;
+	z-index: 0;
 
-#popup {
-	position: absolute;
-	transform: translate(-50%, -50%);
-	top: 50vh;
-	left: 50vw;
-	z-index: 1;
-	background-color: $blanc;
-	padding: 2rem;
-	border-radius: 2rem;
-}
-
-//media query
-@media #{$mqNotebookp} {
-	.desk-deco {
-		display: block;
+	h1 {
+		font-size: 1.75rem;
+		margin: 70px 0 1rem 0;
 	}
 
-	#top-right-circles {
-		display: block;
-		animation: circles-appear 0.5s forwards;
-		opacity: 0;
+	form {
+		position: relative;
+		padding: 1rem;
+		box-sizing: border-box;
+		border-radius: 0.5rem;
+		box-shadow: 0 0 0.5rem 0 #00000020;
+		background-color: $blanc;
+		font-size: 1rem;
+		font-family: Montserrat;
+		font-weight: 400;
+		display: flex;
+		flex-direction: column;
+		z-index: 0;
+
+		label {
+			font-size: 0.8rem;
+		}
+
+		input::-webkit-outer-spin-button,
+		input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+
+		input[type=number] {
+			-moz-appearance: textfield;
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=tel],
+		input[type=number] {
+			border-width: 0 0 1px 0;
+			border-color: #a0a0a0ff;
+		}
+
+		input[type=submit] {
+			border: none;
+			border-radius: 500px;
+			padding: 0.5rem 1rem;
+			background: linear-gradient(160deg, $vert4 1%, $vert3 20%, $vert1 100%);
+			color: $blanc;
+		}
+
+		input {
+			font-size: 1.4rem;
+			outline: none;
+			margin: 0.5rem 0;
+			font-family: Montserrat;
+		}
+	}
+
+	//classes
+
+	//id
+	#popupbg {
 		position: absolute;
-		height: 500px;
-		width: 500px;
-		top: -400px;
-		right: -400px;
+		width: 100vw;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	#popup {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50vh;
+		left: 50vw;
 		z-index: 1;
-		transition: 1s;
+		background-color: $blanc;
+		padding: 2rem;
+		border-radius: 2rem;
+	}
 
-		#circle-1 {
-			position: absolute;
-			border-radius: 50%;
-			height: 160px;
-			width: 160px;
-			border: 35px solid $vert1;
-			background: $blanc;
-			bottom: 0px;
+	//media query
+	@media #{$mqNotebookp} {
+		.desk-deco {
+			display: block;
 		}
 
-		#circle-2 {
-			position: absolute;
-			border-radius: 50%;
-			height: 60px;
-			width: 60px;
-			border: 35px solid $vert3;
-			right: 110px;
-			bottom: -15px;
+		form {
+			width: 1200px;
+			padding: 1rem 120px;
+
+			input[type=submit] {
+				width: fit-content;
+			}
 		}
 
-		#circle-3 {
+		#top-right-circles {
+			display: block;
+			animation: circles-appear 0.5s forwards;
+			opacity: 0;
 			position: absolute;
-			border-radius: 50%;
-			height: 100px;
-			width: 100px;
-			border: 35px solid $vert2;
-			right: 140px;
-			top: 170px;
+			height: 500px;
+			width: 500px;
+			top: -400px;
+			right: -400px;
+			z-index: 1;
+			transition: 1s;
+
+			#circle-1 {
+				position: absolute;
+				border-radius: 50%;
+				height: 160px;
+				width: 160px;
+				border: 35px solid $vert1;
+				background: $blanc;
+				bottom: 0px;
+			}
+
+			#circle-2 {
+				position: absolute;
+				border-radius: 50%;
+				height: 60px;
+				width: 60px;
+				border: 35px solid $vert3;
+				right: 110px;
+				bottom: -15px;
+			}
+
+			#circle-3 {
+				position: absolute;
+				border-radius: 50%;
+				height: 100px;
+				width: 100px;
+				border: 35px solid $vert2;
+				right: 140px;
+				top: 170px;
+			}
 		}
 	}
 }
