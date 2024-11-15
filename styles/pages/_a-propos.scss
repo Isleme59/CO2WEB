@@ -32,6 +32,10 @@
 
         .paragraph {
             margin: 0 2rem 0 2rem;
+
+            @media #{$mqTablet} {
+                padding-top: 50px;
+            }
         }
 
 
@@ -40,6 +44,10 @@
             font-size: large;
             padding-top: 10px;
             padding-bottom: 10px;
+
+            @media #{$mqTablet} {
+                line-height: 1.5rem;
+            }
         }
 
         hr {
@@ -70,6 +78,12 @@
                     position: absolute;
                     top: 50px;
                     left: 30px;
+
+                    @media #{$mqTablet} {
+                        width: 300px;
+                        top: 45px;
+                        left: 45px;
+                    }
                 }
 
                 #leaves {
@@ -77,6 +91,12 @@
                     position: absolute;
                     top: -30px;
                     left: 15px;
+
+                    @media #{$mqTablet} {
+                        width: 325px;
+                        top: -55px;
+                        left: 30px;
+                    }
                 }
 
                 #right-arrow {
@@ -85,6 +105,11 @@
                     right: 10px;
                     top: 45px;
 
+                    @media #{$mqTablet} {
+                        width: 3.5rem;
+                        top: 25px;
+                        right: 15px;
+                    }
 
                 }
 
@@ -98,6 +123,12 @@
                             $vert4 1%,
                             $vert3 20%,
                             $vert1 100%);
+
+                    @media #{$mqTablet} {
+                        width: 450px;
+                        height: 225px;
+                        top: -50px;
+                    }
 
                 }
             }
@@ -117,10 +148,18 @@
 
 
             #left-arrow {
-                width: 1.5rem;
+                width: 2.5rem;
                 position: absolute;
                 left: 10px;
-                top: 55px;
+                top: 45px;
+                rotate: 180deg;
+
+                @media #{$mqTablet} {
+                    width: 3.5rem;
+                    top: 25px;
+                    right: 15px;
+                }
+
             }
 
             #camping {
@@ -128,6 +167,12 @@
                 width: 250px;
                 right: 2rem;
                 bottom: 20px;
+
+                @media #{$mqTablet} {
+                    width: 350px;
+                    bottom: -30px;
+                    right: 5rem;
+                }
             }
         }
     }

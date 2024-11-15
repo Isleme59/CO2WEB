@@ -10,8 +10,10 @@
 
 <body id="a-propos">
     <header>
-        <img src="./img/CO2WEB.svg" alt="logo">
-        <nav>
+        <img src="./img/CO2WEB.svg" alt="logo" id="logo">
+        <img src="./img/hamburger.svg" alt="" class="no-desk" id="hamburger" onclick="openNav()">
+        <img src="./img/cross.svg" alt="" class="no-display no-desk" id="cross" onclick="closeNav()">
+        <nav class="no-display">
             <ul>
                 <li>
                     <a href="index.html">Accueil</a>
@@ -23,18 +25,16 @@
                     <a href="trouver_un_velib.html">Trouver un velib</a>
                 </li>
                 <li>
-                    <a href="calculateur.html" class="active">Calculateur</a>
+                    <a href="calculateur.html">Calculateur</a>
                 </li>
                 <li>
-                    <a href="a_propos.html">&Agrave; propos</a>
+                    <a href="a_propos.html" class="active">&Agrave; propos</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
-        <img src="./img/hamburger.svg" alt="" class="no-desk" id="hamburger">
-        <img src="./img/cross.svg" alt="" class="no-desk" id="cross">
     </header>
     <h1>&Agrave; propos du projet</h1>
     <main>
@@ -78,7 +78,7 @@
             <div class="second-slide" id="second-slide">
 
                 <div class="second-block">
-                    <label for="slide1"><img src="img/left-arrow.svg" alt="" id="left-arrow"></label>
+                    <label for="slide1"><img src="img/right-arrow.svg" alt="" id="left-arrow"></label>
 
                     <img src="img/camping.svg" alt="" id="camping">
                 </div>
@@ -128,7 +128,7 @@
             </ul>
         </nav>
     </footer>
-
+    <script src="./js/navbar.js"></script>
 </body>
 
 </html>
