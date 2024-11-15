@@ -9,8 +9,10 @@
 	</head>
 	<body id="calculateur">
 		<header>
-			<img src="./img/CO2WEB.svg" alt="logo">
-			<nav>
+			<img src="./img/CO2WEB.svg" alt="logo" id="logo">
+			<img src="./img/hamburger.svg" alt=""  class="no-desk" id="hamburger" onclick="openNav()">
+			<img src="./img/cross.svg" alt="" class="no-display no-desk" id="cross" onclick="closeNav()">
+			<nav class="no-display">
 				<ul>
 					<li>
 						<a href="index.html">Accueil</a>
@@ -32,22 +34,20 @@
 					</li>
 				</ul>
 			</nav>
-			<img src="./img/hamburger.svg" alt="" class="no-desk" id="hamburger">
-			<img src="./img/cross.svg" alt="" class="no-desk" id="cross">
 		</header>
 		<main id="calc-main">
 			<h1>
 				Calculez vos &eacute;missions
 			</h1>
-          <div id="top-right-circles" class="contacts__bg-elements">
-            <div class="desk-deco" id="circle-1"></div>
-            <div class="desk-deco" id="circle-2"></div>
-            <div class="desk-deco" id="circle-3"></div>
-          </div>
 			<img src="./img/leaf.svg" alt="leaf" class="desk-deco" id="leaf">
 			<img src="./img/leaves.svg" alt="leaves" class="desk-deco" id="leaves">
 			<img src="./img/fern.svg" alt="fern" class="desk-deco" id="fern">
 			<form action="">
+          	<div id="top-right-circles" class="contacts__bg-elements">
+            	<div class="desk-deco" id="circle-1"></div>
+            	<div class="desk-deco" id="circle-2"></div>
+            	<div class="desk-deco" id="circle-3"></div>
+          	</div>
 				<label for="distance">Distance parcourue par jour &lpar;en km&rpar;</label>
 				<input type="number" name="distance" id="distance" placeholder="www.example.com" min="0">
 				<label for="working-days">Nombre de jours travaill&eacute;s par semaine</label>
@@ -91,6 +91,7 @@
 				</ul>
 			</nav>
 		</footer>
+		<script src="./js/navbar.js"></script>
 		<script src="./js/calculator.js"></script>
 	</body>
 </html>
