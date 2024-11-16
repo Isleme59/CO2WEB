@@ -9,8 +9,22 @@
 
   <body class="index">
     <header>
-      <img src="./img/CO2WEB.svg" alt="logo" />
-      <nav>
+      <img src="./img/CO2WEB.svg" alt="logo" id="logo" />
+      <img
+        src="./img/hamburger.svg"
+        alt=""
+        class="no-desk"
+        id="hamburger"
+        onclick="openNav()"
+      />
+      <img
+        src="./img/cross.svg"
+        alt=""
+        class="no-display no-desk"
+        id="cross"
+        onclick="closeNav()"
+      />
+      <nav class="no-display">
         <ul>
           <li>
             <a href="index.html">Accueil</a>
@@ -22,18 +36,16 @@
             <a href="trouver_un_velib.html">Trouver un velib</a>
           </li>
           <li>
-            <a href="calculateur.html" class="active">Calculateur</a>
+            <a href="calculateur.html">Calculateur</a>
           </li>
           <li>
             <a href="a_propos.html">&Agrave; propos</a>
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
           </li>
         </ul>
       </nav>
-      <img src="./img/hamburger.svg" alt="" class="no-desk" id="hamburger" />
-      <img src="./img/cross.svg" alt="" class="no-desk" id="cross" />
     </header>
     <div class="image">
       <img src="img/nature.svg" alt="logo Co2Web" />
@@ -50,6 +62,7 @@
     <div class="texte_ou">ou</div>
     <br />
     <a href="#"><button class="second_btn">En savoir Plus</button></a>
+
     <footer>
       <hr />
       <p class="no-desk">
@@ -78,5 +91,6 @@
         </ul>
       </nav>
     </footer>
+    <script src="./js/navbar.js"></script>
   </body>
 </html>

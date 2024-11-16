@@ -79,27 +79,27 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 h1 {
-	font-size: inherit;
+  font-size: inherit;
 }
 
 html {
-	font-size: 18px;
-	scroll-behavior: smooth;
-	overflow-x: hidden;
-	margin-top: 70px;
+  font-size: 18px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin-top: 70px;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 article,
@@ -113,32 +113,32 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+  display: block;
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: "";
-	content: none;
+  content: "";
+  content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
