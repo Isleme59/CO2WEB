@@ -1,5 +1,6 @@
 .contact {
-  margin: 50px 30px 30px;
+  margin: 100px 30px 30px !important;
+  overflow: hidden;
   @media #{$mqNotebookp} {
     font-size: 25px;
   }
@@ -61,6 +62,12 @@
     right: -400px;
     z-index: 1;
     transition: 1s;
+    @media #{$mqNotebookp} {
+      height: 300px;
+      width: 300px;
+      top: -200px;
+      right: -200px;
+    }
     #circle-1 {
       position: absolute;
       border-radius: 50%;
@@ -69,6 +76,10 @@
       border: 35px solid $vert1;
       background: $blanc;
       bottom: 0px;
+      @media #{$mqNotebookp} {
+        height: 100px;
+        width: 100px;
+      }
     }
 
     #circle-2 {
@@ -79,6 +90,12 @@
       border: 35px solid $vert3;
       right: 120px;
       bottom: -15px;
+      @media #{$mqNotebookp} {
+        height: 40px;
+        width: 40px;
+        bottom: -20px;
+        right: 0px;
+      }
     }
 
     #circle-3 {
@@ -89,6 +106,12 @@
       border: 35px solid $vert2;
       right: 110px;
       top: 190px;
+      @media #{$mqNotebookp} {
+        height: 70px;
+        width: 70px;
+        top: 50px;
+        right: 0px;
+      }
     }
   }
   #bottom-right-leaf {
