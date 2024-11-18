@@ -1,5 +1,5 @@
 .contact {
-  margin: 100px 30px 30px !important;
+  margin: 0px 30px 30px !important;
   overflow: hidden;
   @media #{$mqNotebookp} {
     font-size: 25px;
@@ -134,7 +134,7 @@
 
   @media #{$mqTabletp} {
     margin: 0;
-    padding: 50px 50px;
+    padding: 100px;
   }
 
   h1 {
