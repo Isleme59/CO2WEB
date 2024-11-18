@@ -14,6 +14,10 @@
             flex-direction: row-reverse;
         }
 
+        @media #{$mqNotebookp} {
+            height: 80vh;
+        }
+
 
     }
 
@@ -28,6 +32,12 @@
             line-height: 2rem;
         }
 
+        @media #{$mqDesktop} {
+            margin-right: 200px;
+            margin: 100px 200px 30px 90px;
+
+        }
+
         .title {
             position: relative;
             font-size: 24px;
@@ -39,6 +49,12 @@
                 font-size: 1.8rem;
                 padding: 30px 20px 0 0;
                 line-height: 2rem;
+            }
+
+            @media #{$mqDesktop} {
+                font-size: 2.8rem;
+                line-height: 4rem;
+                padding-right: 150px;
             }
         }
 
@@ -58,6 +74,11 @@
                 margin: 30px 20px 30px 0;
                 line-height: 1.5rem;
             }
+
+            @media #{$mqDesktop} {
+                font-size: 1.3rem;
+                line-height: 2.5rem;
+            }
         }
     }
 
@@ -70,12 +91,16 @@
             gap: 10px;
         }
 
+        @media #{$mqNotebookp} {
+            justify-content: flex-start;
+        }
+
         .premier_btn {
             display: block;
             font-size: 16px;
             padding: 15px;
             text-align: center;
-            margin: 20px auto 0;
+            margin: 20px 0 0 0;
             background: linear-gradient(160deg,
                     $vert4 1%,
                     $vert3 20%,
@@ -93,6 +118,11 @@
                 padding: 10px 5px;
                 font-size: 20px;
                 font-weight: 400;
+            }
+
+            @media #{$mqNotebookp} {
+                padding: 10px 0;
+                width: 150px;
             }
         }
 
@@ -120,6 +150,11 @@
                 margin: 0 auto 0;
                 padding: 10px;
             }
+
+            @media #{$mqNotebookp} {
+                width: 150px;
+                padding: 10px 7px;
+            }
         }
 
         .second_btn:hover {
@@ -132,6 +167,10 @@
 
         .texte_ou {
             text-align: center;
+
+            @media #{$mqNotebookp} {
+                font-size: 0.7rem;
+            }
         }
     }
 
