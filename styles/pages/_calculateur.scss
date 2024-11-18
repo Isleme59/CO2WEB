@@ -4,7 +4,6 @@
 }
 
 #calc-main {
-	//tags
 	padding: 0 1rem;
 	box-sizing: border-box;
 	display: flex;
@@ -14,6 +13,7 @@
 	z-index: 0;
 	height: calc(100vh - 70px);
 
+	//tags
 	h1 {
 		font-size: 1.75rem;
 		margin: 1rem 0;
@@ -85,7 +85,6 @@
 			}
 		}
 
-
 		p.small-text {
 			width: 90%;
 			text-align: center;
@@ -117,11 +116,92 @@
 		box-sizing: border-box;
 		@extend %shadow;
 	}
+}
 
-	//media query
-	@media #{$mqNotebookp} {
+@media #{$mqTablet} {
+	#calc-main {
+		h1 {
+			margin-top: 5vh;
+		}
+
+		form {
+			margin-top: 5vh
+		}
+	}
+}
+
+@media #{$mqNotebookp} {
+
+	#calc-main {
+		padding-top: 10vh;
+		min-height: calc(90vh - 70px);
+
 		.desk-deco {
-			display: block;
+
+			&#leaves,
+			&#leaf,
+			&#fern {
+				position: absolute;
+				display: block;
+				animation: apparition 2s forwards;
+				width: 250px;
+				z-index: 0;
+				transition: 1s;
+			}
+
+			&#leaves {
+				transform: translate(-40vw, -10vh);
+			}
+
+			&#leaf {
+				transform: translate(-40vw, 30vh) rotate(-10deg);
+			}
+
+			&#fern {
+				transform: translate(40vw, 30vh) rotate(20deg);
+			}
+		}
+
+		.desk-deco {
+			&#top-right-circles {
+				display: block;
+				animation: circles-appear 2s forwards;
+				height: 18vw;
+				width: 18vw;
+				top: -200px;
+				right: -5vw;
+
+				#circle-1,
+				#circle-2,
+				#circle-3 {
+					display: block;
+					background: $blanc;
+					border-width: 2vw;
+					border-style: solid;
+				}
+
+				#circle-1 {
+					width: 7vw;
+					height: 7vw;
+					border-color: $vert1;
+				}
+
+				#circle-2 {
+					width: 4vw;
+					height: 4.5vw;
+					top: 50px;
+					right: 0px;
+					border-color: $vert2;
+				}
+
+				#circle-3 {
+					width: 2.5vw;
+					height: 2.7vw;
+					bottom: -20px;
+					right: 0px;
+					border-color: $vert3;
+				}
+			}
 		}
 
 		form {
@@ -132,48 +212,65 @@
 				width: fit-content;
 			}
 		}
+	}
 
-		#top-right-circles {
-			display: block;
-			animation: circles-appear 0.5s forwards;
-			opacity: 0;
+	#top-right-circles {
+		opacity: 0;
+		position: absolute;
+		height: 500px;
+		width: 500px;
+		top: -400px;
+		right: -400px;
+		z-index: 1;
+		transition: 1s;
+
+		#circle-1 {
 			position: absolute;
-			height: 500px;
-			width: 500px;
-			top: -400px;
-			right: -400px;
-			z-index: 1;
-			transition: 1s;
+			border-radius: 50%;
+			height: 160px;
+			width: 160px;
+			bottom: 0px;
+		}
 
-			#circle-1 {
-				position: absolute;
-				border-radius: 50%;
-				height: 160px;
-				width: 160px;
-				border: 35px solid $vert1;
-				background: $blanc;
-				bottom: 0px;
-			}
+		#circle-2 {
+			position: absolute;
+			border-radius: 50%;
+			height: 60px;
+			width: 60px;
+			right: 120px;
+			bottom: -15px;
+		}
 
-			#circle-2 {
-				position: absolute;
-				border-radius: 50%;
-				height: 60px;
-				width: 60px;
-				border: 35px solid $vert3;
-				right: 110px;
-				bottom: -15px;
-			}
+		#circle-3 {
+			position: absolute;
+			border-radius: 50%;
+			height: 100px;
+			width: 100px;
+			right: 110px;
+			top: 190px;
+		}
+	}
 
-			#circle-3 {
-				position: absolute;
-				border-radius: 50%;
-				height: 100px;
-				width: 100px;
-				border: 35px solid $vert2;
-				right: 140px;
-				top: 170px;
-			}
+
+	@keyframes apparition {
+		0% {
+			transform: translate(0px, 0px);
+		}
+
+		100% {
+			transform: translate(inherit, inherit);
+		}
+	}
+
+	@keyframes circles-appear {
+		0% {
+			opacity: 0;
+			transform: scale(0);
+		}
+
+		100% {
+			opacity: 1;
+			transform: scale(1);
 		}
 	}
 }
