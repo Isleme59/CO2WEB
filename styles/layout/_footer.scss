@@ -5,12 +5,14 @@ footer {
 	flex-direction: column;
 	position: fixed;
 	bottom: 0;
+	z-index: 999;
 
 	hr {
 		width: 100vw;
 		background: linear-gradient(to left, $vert1, $vert2, $vert3, $vert4);
 		border: none;
 		height: 2px;
+		box-sizing: border-box;
 	}
 
 	p,
