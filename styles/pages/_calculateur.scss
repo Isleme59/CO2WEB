@@ -7,10 +7,12 @@
 	align-items: center;
 	overflow-x: hidden;
 	z-index: 0;
+	min-height: 100vh;
 
 	h1 {
 		font-size: 1.75rem;
-		margin: 70px 0 1rem 0;
+		margin: 1rem 0;
+		line-height: 2rem;
 	}
 
 	form {
@@ -18,14 +20,17 @@
 		padding: 1rem;
 		box-sizing: border-box;
 		border-radius: 0.5rem;
-		box-shadow: 0 0 0.5rem 0 #00000020;
+		@extend %shadow;
 		background-color: $blanc;
 		font-size: 1rem;
 		font-family: Montserrat;
 		font-weight: 400;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-evenly;
 		z-index: 0;
+		width: 90vw;
+		height: 350px;
 
 		label {
 			font-size: 0.8rem;
@@ -47,26 +52,43 @@
 		input[type=number] {
 			border-width: 0 0 1px 0;
 			border-color: #a0a0a0ff;
-		}
 
-		input[type=submit] {
-			border: none;
-			border-radius: 500px;
-			padding: 0.5rem 1rem;
-			background: linear-gradient(160deg, $vert4 1%, $vert3 20%, $vert1 100%);
-			color: $blanc;
+			&::placeholder {
+				color: #c0c0c080;
+			}
 		}
 
 		input {
-			font-size: 1.4rem;
+			font-size: 1rem;
 			outline: none;
 			margin: 0.5rem 0;
 			font-family: Montserrat;
 		}
+
+		input[type=submit] {
+			border: none;
+			font-size: 1.4rem;
+			border-radius: 500px;
+			padding: 0.5rem 1rem;
+			background: linear-gradient(160deg, $vert4 0%, $vert3 33%, $vert2 67%, $vert1 100%);
+			@extend %shadow-light-green;
+			color: $blanc;
+
+			&:active {
+				background: linear-gradient($vert1 0%, $vert1 100%);
+				@extend %shadow-green;
+			}
+		}
+
+
+		p.small-text {
+			width: 90%;
+			text-align: center;
+			align-self: center;
+		}
 	}
 
 	//classes
-
 	//id
 	#popupbg {
 		position: absolute;
@@ -77,6 +99,7 @@
 	}
 
 	#popup {
+		font-family: Montserrat;
 		position: absolute;
 		transform: translate(-50%, -50%);
 		top: 50vh;
@@ -85,6 +108,9 @@
 		background-color: $blanc;
 		padding: 2rem;
 		border-radius: 2rem;
+		width: 90vw;
+		box-sizing: border-box;
+		@extend %shadow;
 	}
 
 	//media query

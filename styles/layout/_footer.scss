@@ -1,0 +1,41 @@
+footer {
+	font-family: Montserrat;
+	height: 25vh;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	bottom: 0;
+
+	hr {
+		width: 100vw;
+		background: linear-gradient(to left, $vert1, $vert2, $vert3, $vert4);
+		border: none;
+		height: 2px;
+	}
+
+	p,
+	a {
+		font-weight: 500;
+	}
+
+	p,
+	nav {
+		padding: 1vh 1rem;
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+
+			li {
+				margin-right: 1rem;
+				line-height: 2rem;
+
+				a {
+					color: $vert1;
+
+				}
+			}
+		}
+	}
+}
