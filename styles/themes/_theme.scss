@@ -5,3 +5,15 @@
 .desk-deco {
 	display: none;
 }
+
+@media #{$mqTabletp} {
+	.no-tablet {
+		display: none;
+	}
+}
+
+@media #{$mqNotebookp} {
+	.no-desk {
+		display: none;
+	}
+}

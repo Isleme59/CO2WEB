@@ -35,9 +35,24 @@ footer {
 
 				a {
 					color: $vert1;
-
 				}
 			}
 		}
+	}
+}
+
+@media #{$mqTabletp} {
+	footer {
+		height: 15vh;
+
+		nav {
+			align-self: end;
+		}
+	}
+}
+
+@media #{$mqNotebookp} {
+	footer {
+		height: 10vh;
 	}
 }
