@@ -12,7 +12,7 @@
 			<img src="./img/CO2WEB.svg" alt="logo" id="logo">
 			<img src="./img/hamburger.svg" alt="" class="no-desk" id="hamburger" onclick="openNav()">
 			<img src="./img/cross.svg" alt="" class="no-display no-desk" id="cross" onclick="closeNav()">
-			<nav class="no-display">
+			<nav>
 				<ul>
 					<li>
 						<a href="index.html">Accueil</a>
@@ -36,18 +36,16 @@
 			</nav>
 		</header>
 		<main id="calc-main">
-			<h1>
-				Calculez vos &eacute;missions
-			</h1>
+			<h1>Calculez vos &eacute;missions</h1>
 			<img src="./img/leaf.svg" alt="leaf" class="desk-deco" id="leaf">
 			<img src="./img/leaves.svg" alt="leaves" class="desk-deco" id="leaves">
 			<img src="./img/fern.svg" alt="fern" class="desk-deco" id="fern">
 			<form action="">
-          	<div id="top-right-circles" class="contacts__bg-elements">
-            	<div class="desk-deco" id="circle-1"></div>
-            	<div class="desk-deco" id="circle-2"></div>
-            	<div class="desk-deco" id="circle-3"></div>
-          	</div>
+				<div id="top-right-circles" class="contacts__bg-elements">
+					<div class="desk-deco" id="circle-1"></div>
+					<div class="desk-deco" id="circle-2"></div>
+					<div class="desk-deco" id="circle-3"></div>
+				</div>
 				<label for="distance">Distance parcourue par jour &lpar;en km&rpar;&colon;</label>
 				<input type="number" name="distance" id="distance" placeholder="www.example.com" min="0" required>
 				<label for="working-days">Nombre de jours travaill&eacute;s par semaine&colon;</label>
@@ -55,18 +53,17 @@
 				<input type="submit" value="Calculer maintenant">
 				<p class="small-text">En utilisant cette calculatrice d'&eacute;missions de carbone, vous acceptez que les informations soient inscrites et stock&eacute;es dans notre base de donn&eacute;es publique.</p>
 			</form>
-			<div id="popupbg" onClick="closePop()">
-			</div>
+			<div id="popupbg" onClick="closePop()"></div>
 			<div id="popup">
-				<p>
-					les &eacute;missions de CO2 pour les trajets domicile / travail en voiture sont de <span id="carbonAmount"></span> kg par mois
-				</p>
+				<p>les &eacute;missions de CO2 pour les trajets domicile / travail en voiture sont de <span id="carbonAmount"></span> kg par mois</p>
 			</div>
 		</main>
 		<footer>
 			<hr>
 			<p class="no-desk">
-				Copyright &copy; 2022 CO2WEB.<br>All rights reserved.
+				Copyright &copy; 2022 CO2WEB. 
+				<br class="no-tablet">
+				All rights reserved.
 			</p>
 			<nav>
 				<ul>
