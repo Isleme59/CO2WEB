@@ -1,8 +1,11 @@
 const NAV = document.querySelector("nav");
 const CROSS = document.getElementById("cross");
 const BURGER = document.getElementById("hamburger");
+const WIDE = 1366;
 
-let width = window.matchMedia("(min-width: 1366px)");
+let navClass = NAV.getAttribute("class");
+let brgClass = BURGER.getAttribute("class");
+let crsClass = CROSS.getAttribute("class");
 
 function openNav() {
 	NAV.setAttribute("class", "display");
@@ -16,8 +19,22 @@ function closeNav() {
 	BURGER.setAttribute("class", "display");
 }
 
-if (width.matches) {
+function wideNav() {
 	NAV.setAttribute("class", "display");
 	BURGER.setAttribute("class", "no-display");
 	CROSS.setAttribute("class", "no-display");
 }
+
+function sizeNav() {
+	if (window.innerWidth >= WIDE) {
+		wideNav();
+	} else {
+		closeNav();
+	}
+};
+
+window.addEventListener("resize", () => {
+	sizeNav();
+	console.log(window.innerWidth);
+});
+
