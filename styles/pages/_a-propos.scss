@@ -48,6 +48,15 @@
                 font-weight: 600;
                 position: relative;
             }
+
+            @media #{$mqDesktop} {
+                font-family: "Montserrat";
+                font-size: 2.25rem;
+                margin-bottom: 40px;
+                padding-left: 30px;
+                font-weight: 600;
+                position: relative;
+            }
         }
 
 
@@ -144,6 +153,12 @@
                                 top: 7rem;
                                 left: 160px;
                             }
+
+                            @media #{$mqDesktop} {
+                                width: 500px;
+                                top: 11rem;
+                                left: 160px;
+                            }
                         }
 
                         #leaves {
@@ -164,6 +179,12 @@
                                 top: -25px;
                             }
 
+                            @media #{$mqDesktop} {
+                                width: 500px;
+                                left: 150px;
+                                top: 1.5rem;
+                            }
+
 
                         }
 
@@ -182,6 +203,14 @@
                             @media #{$mqNotebook} {
                                 width: 4.5rem;
                                 top: 7rem;
+                                right: 2rem;
+                                cursor: pointer;
+                            }
+
+                            @media #{$mqDesktop} {
+                                width: 4.5rem;
+                                top: 12rem;
+                                right: 6rem;
                                 cursor: pointer;
                             }
 
@@ -210,6 +239,12 @@
                                 top: 3rem;
                             }
 
+                            @media #{$mqDesktop} {
+                                width: 750px;
+                                height: 300px;
+                                top: 5rem;
+                            }
+
                         }
 
                         .paragraph2 {
@@ -217,7 +252,7 @@
                                 position: absolute;
                                 width: 450px;
                                 right: 10rem;
-                                top: 0;
+                                top: 2rem;
 
                                 h2 {
                                     @media #{$mqNotebook} {
@@ -232,6 +267,7 @@
 
                                         }
                                     }
+
                                 }
 
                                 hr {
@@ -243,11 +279,52 @@
                                 }
 
                                 span {
-                                    font-family: "Montserrat";
-                                    font-weight: 400;
-                                    line-height: 2rem;
+                                    @media #{$mqNotebook} {
+                                        font-family: "Montserrat";
+                                        font-weight: 400;
+                                        line-height: 2rem;
+                                    }
                                 }
 
+                            }
+
+                            @media #{$mqDesktop} {
+                                position: absolute;
+                                width: 450px;
+                                right: 25rem;
+                                top: 7rem;
+
+                                h2 {
+                                    @media #{$mqDesktop} {
+                                        &::before {
+                                            content: "\2022";
+                                            margin-right: 15px;
+                                            font-size: 75px;
+                                            color: $vert3;
+                                            position: absolute;
+                                            left: -5px;
+                                            top: -5px;
+
+                                        }
+                                    }
+
+                                }
+
+                                hr {
+                                    @media #{$mqDesktop} {
+                                        height: 3px;
+                                        width: 200px;
+                                        margin: 1rem 0 1rem 0;
+                                    }
+                                }
+
+                                span {
+                                    @media #{$mqDesktop} {
+                                        font-family: "Montserrat";
+                                        font-weight: 400;
+                                        line-height: 2rem;
+                                    }
+                                }
                             }
                         }
                     }
@@ -273,7 +350,25 @@
                         position: absolute;
                         width: 500px;
                         left: 10rem;
-                        top: 5rem;
+                        top: 2rem;
+
+                        &::before {
+                            content: "\2022";
+                            margin-right: 15px;
+                            font-size: 55px;
+                            color: $vert3;
+                            position: absolute;
+                            left: -10px;
+                            top: 0px;
+
+                        }
+                    }
+
+                    @media #{$mqDesktop} {
+                        position: absolute;
+                        width: 500px;
+                        left: 18rem;
+                        top: 7rem;
 
                         &::before {
                             content: "\2022";
@@ -302,10 +397,17 @@
                         right: 15px;
                     }
 
-                    @media #{$mqNotebookp} {
+                    @media #{$mqNotebook} {
                         width: 4.5rem;
                         top: 7rem;
                         left: 2rem;
+                        cursor: pointer;
+                    }
+
+                    @media #{$mqDesktop} {
+                        width: 4.5rem;
+                        top: 12rem;
+                        left: 6rem;
                         cursor: pointer;
                     }
 
@@ -323,11 +425,19 @@
                         right: 5rem;
                     }
 
-                    @media #{$mqNotebookp} {
+                    @media #{$mqNotebook} {
                         width: 1000px;
                         bottom: 0;
                         top: -5rem;
                         right: -7rem;
+                        z-index: -1;
+                    }
+
+                    @media #{$mqDesktop} {
+                        width: 1200px;
+                        bottom: 0;
+                        top: -5rem;
+                        right: -3rem;
                         z-index: -1;
                     }
                 }
