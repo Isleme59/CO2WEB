@@ -1,8 +1,18 @@
 .contact {
-  margin: 0px 30px 30px !important;
+  // margin: 0px 30px 30px !important;
   overflow: hidden;
+  @include verticalCenter;
+  flex-direction: column;
+  @media #{$mqTabletp} {
+    margin: 0 !important;
+    padding: 52px 100px;
+  }
   @media #{$mqNotebookp} {
     font-size: 18px;
+    padding: 90px;
+  }
+  @media #{$mqDesktop} {
+    padding: 150px 100px;
   }
   /* ELEMENTS BG CACHES EN MOBILE */
   .contacts__bg-elements {
@@ -132,11 +142,6 @@
   }
   /* FIN ELEMENT BG CACHES EN MOBILE */
 
-  @media #{$mqTabletp} {
-    margin: 0;
-    padding: 100px;
-  }
-
   h1 {
     font-size: 1.7rem;
     font-weight: 600;
@@ -156,6 +161,7 @@
     color: $noir;
     border-radius: 20px;
     background-color: $blanc;
+    margin: 0px 30px 30px !important;
     &:before {
       content: "";
       position: absolute;
@@ -171,7 +177,7 @@
       margin: auto;
     }
     @media #{$mqNotebookp} {
-      width: 800px;
+      width: 1000px;
     }
     @media #{$mqDesktop} {
       width: 1000px;
@@ -190,10 +196,10 @@
           flex-wrap: wrap;
           padding: 40px 80px;
           & > label:first-child {
-            transform: translateY(220px);
+            transform: translateY(235px);
           }
           #email {
-            transform: translateY(220px);
+            transform: translateY(235px);
           }
         }
         /* EXPLICATIONS CONCERNANT LE TRANSLATE */
@@ -207,7 +213,7 @@
         @media #{$mqDesktop} {
           justify-content: space-between;
           flex-direction: column;
-          height: 85%;
+          height: 80%;
           & > label:first-child {
             //EMAIL
             width: 45%;
@@ -269,6 +275,9 @@
           @media #{$mqTabletp} {
             transform: translateY(-220px);
           }
+          @media #{$mqDesktop} {
+            transform: translateY(-200px);
+          }
         }
         textarea {
           height: 80px;
@@ -319,6 +328,9 @@
             margin-left: auto;
             min-width: 100px;
             height: 50px;
+          }
+          @media #{$mqDesktop} {
+            transform: translateY(20px);
           }
         }
       }
