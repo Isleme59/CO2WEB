@@ -3,43 +3,52 @@
   overflow: hidden;
   @include verticalCenter;
   flex-direction: column;
+
   @media #{$mqTabletp} {
     margin: 0 !important;
     padding: 52px 100px;
   }
+
   @media #{$mqNotebookp} {
     font-size: 18px;
     padding: 90px;
   }
+
   @media #{$mqDesktop} {
     padding: 150px 100px;
   }
+
   /* ELEMENTS BG CACHES EN MOBILE */
   .contacts__bg-elements {
     display: none;
+
     @media #{$mqTabletp} {
       &#top-left-leaves {
         display: block;
-        animation: apparition 2s forwards;
+        animation: apparition 0.5s forwards;
       }
+
       &#bottom-right-leaf {
         display: block;
-        animation: apparition 2s forwards;
+        animation: apparition 0.5s forwards;
       }
     }
+
     @media #{$mqNotebookp} {
       &#top-right-circles {
         display: block;
-        animation: circles-appear 2s forwards;
+        animation: circles-appear 0.5s forwards;
       }
     }
+
     @media #{$mqDesktop} {
       &#bottom-left-leaf {
         display: block;
-        animation: apparition 2s forwards;
+        animation: apparition 0.5s forwards;
       }
     }
   }
+
   #top-left-leaves {
     position: absolute;
     background-image: url("/img/leaves.svg");
@@ -49,10 +58,12 @@
     transform: scale(0.5) translate(-550px, -500px);
     z-index: -1;
     transition: 1s;
+
     @media #{$mqNotebookp} {
       transform: scale(0.7) translate(-450px, -250px);
     }
   }
+
   #bottom-left-leaf {
     position: absolute;
     background-image: url("/img/leaf.svg");
@@ -63,6 +74,7 @@
     transform: translate(-305px, 220px) rotate(-10deg);
     transition: 1s;
   }
+
   #top-right-circles {
     opacity: 0;
     position: absolute;
@@ -72,12 +84,14 @@
     right: -400px;
     z-index: 1;
     transition: 1s;
+
     @media #{$mqNotebookp} {
       height: 300px;
       width: 300px;
       top: -200px;
       right: -200px;
     }
+
     #circle-1 {
       position: absolute;
       border-radius: 50%;
@@ -86,6 +100,7 @@
       border: 35px solid $vert1;
       background: $blanc;
       bottom: 0px;
+
       @media #{$mqNotebookp} {
         height: 100px;
         width: 100px;
@@ -100,6 +115,7 @@
       border: 35px solid $vert3;
       right: 120px;
       bottom: -15px;
+
       @media #{$mqNotebookp} {
         height: 40px;
         width: 40px;
@@ -116,6 +132,7 @@
       border: 35px solid $vert2;
       right: 110px;
       top: 190px;
+
       @media #{$mqNotebookp} {
         height: 70px;
         width: 70px;
@@ -124,6 +141,7 @@
       }
     }
   }
+
   #bottom-right-leaf {
     position: absolute;
     background-image: url("/img/fern.svg");
@@ -133,13 +151,16 @@
     width: 500px;
     transform: scale(0.5) translate(780px, 250px) rotate(20deg);
     transition: 1s;
+
     @media #{$mqNotebookp} {
       transform: scale(0.6) translate(980px, 250px) rotate(5deg);
     }
+
     @media #{$mqDesktop} {
       transform: scale(0.7) translate(1130px, 150px) rotate(5deg);
     }
   }
+
   /* FIN ELEMENT BG CACHES EN MOBILE */
 
   h1 {
@@ -147,14 +168,17 @@
     font-weight: 600;
     color: $noir;
     margin-bottom: 25px;
+
     @media #{$mqTabletp} {
       text-align: center;
       margin-bottom: 40px;
     }
+
     @media #{$mqDesktop} {
       font-size: 2.5rem;
     }
   }
+
   .contact__form {
     position: relative;
     height: 550px;
@@ -162,6 +186,7 @@
     border-radius: 20px;
     background-color: $blanc;
     margin: 0px 30px 30px !important;
+
     &:before {
       content: "";
       position: absolute;
@@ -171,37 +196,46 @@
       box-shadow: 0 0 25px 0px rgb(230, 230, 230);
       z-index: -2;
     }
+
     @media #{$mqTabletp} {
       height: 600px;
       width: 600px;
       margin: auto;
     }
+
     @media #{$mqNotebookp} {
       width: 1000px;
     }
+
     @media #{$mqDesktop} {
       width: 1000px;
     }
+
     .contact__form-container {
       height: 100%;
+
       form {
         height: 100%;
         padding: 25px 30px;
         color: $noir;
         display: flex;
         flex-direction: column;
+
         @media #{$mqTabletp} {
           height: 90%;
           flex-direction: row;
           flex-wrap: wrap;
           padding: 40px 80px;
-          & > label:first-child {
+
+          &>label:first-child {
             transform: translateY(235px);
           }
+
           #email {
             transform: translateY(235px);
           }
         }
+
         /* EXPLICATIONS CONCERNANT LE TRANSLATE */
         /* J'aurais du passer par un grid dés le départ. Je le saurais au prochain projet.
         Je n'ai pas envie de tout recommencer, donc je reste sur cette lancée car ça va fonctionner tout de même.
@@ -214,44 +248,54 @@
           justify-content: space-between;
           flex-direction: column;
           height: 80%;
-          & > label:first-child {
+
+          &>label:first-child {
             //EMAIL
             width: 45%;
             transform: translate(0px, 170px);
           }
+
           #email {
             // EMAIL
             width: 45%;
             transform: translate(0px, 170px);
           }
-          & > label:nth-child(3) {
+
+          &>label:nth-child(3) {
             //TELEPHONE
             width: 45%;
             transform: translate(455px, 50px);
           }
+
           #tel {
             // TELEPHONE
             width: 45%;
             transform: translate(455px, 50px);
           }
         }
+
         label,
         input,
         textarea {
           width: 100%;
           font-family: Roboto;
+          outline: none;
         }
+
         input::placeholder,
         textarea::placeholder {
           color: lightgray;
+
           @media #{$mqDesktop} {
             font-size: 1.2rem;
           }
         }
+
         label {
           display: block;
           margin-bottom: 10px;
         }
+
         input {
           height: 30px;
           border: none;
@@ -259,26 +303,32 @@
           margin-bottom: 30px;
           font-size: 0.95rem;
           padding-left: 3px;
+
           @media #{$mqDesktop} {
             font-size: 1.2rem;
           }
         }
+
         .label__wrapped {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
           width: 100%;
+
           input,
           label {
             width: 45%;
           }
+
           @media #{$mqTabletp} {
             transform: translateY(-220px);
           }
+
           @media #{$mqDesktop} {
             transform: translateY(-200px);
           }
         }
+
         textarea {
           height: 80px;
           border: none;
@@ -287,21 +337,22 @@
           font-size: 0.9rem;
           padding-left: 3px;
           resize: none;
+
           @media #{$mqTabletp} {
             height: 30px;
           }
+
           @media #{$mqDesktop} {
             font-size: 1.2rem;
           }
         }
+
         input[type="submit"] {
           width: 100%;
-          background: linear-gradient(
-            160deg,
-            $vert4 1%,
-            $vert3 20%,
-            $vert1 100%
-          );
+          background: linear-gradient(160deg,
+              $vert4 1%,
+              $vert3 20%,
+              $vert1 100%);
           box-shadow: 0 5px 22px 0px rgba(1, 82, 1, 0.56);
           color: white;
           padding: 10px;
@@ -315,20 +366,24 @@
           min-width: 250px;
           max-width: 450px;
           margin: 20px auto;
+
           &:hover {
             background: $vert1;
           }
+
           @media #{$mqTabletp} {
             width: 170px;
             font-size: 1.1rem;
             margin: auto;
           }
+
           @media #{$mqNotebookp} {
             margin: 0;
             margin-left: auto;
             min-width: 100px;
             height: 50px;
           }
+
           @media #{$mqDesktop} {
             transform: translateY(20px);
           }
@@ -342,6 +397,7 @@
   0% {
     transform: translate(0px, 0px);
   }
+
   100% {
     transform: translate(inherit, inherit);
   }
@@ -352,6 +408,7 @@
     opacity: 0;
     transform: scale(0);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);

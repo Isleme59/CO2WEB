@@ -78,6 +78,8 @@
 			background: linear-gradient(160deg, $vert4 0%, $vert3 33%, $vert2 67%, $vert1 100%);
 			@extend %shadow-light-green;
 			color: $blanc;
+			white-space: normal;
+			word-wrap: break-word;
 
 			&:active {
 				background: linear-gradient($vert1 0%, $vert1 100%);
