@@ -24,6 +24,10 @@ header {
 	}
 
 	nav {
+		box-sizing: border-box;
+		overflow: hidden;
+		text-align: center;
+
 		&.display {
 			width: 100vw;
 			height: 90vh;
@@ -54,10 +58,6 @@ header {
 				padding: 1rem;
 			}
 		}
-
-		box-sizing: border-box;
-		overflow: hidden;
-		text-align: center;
 	}
 }
 
