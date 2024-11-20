@@ -8,15 +8,15 @@
     <title>Co2Web</title>
 </head>
 
-<body class="index">
+<body class="index" onload="sizeNav()">
     <header>
-        <img src="./img/CO2WEB.svg" alt="logo" id="logo" />
+        <a href="index.html"><img src="./img/CO2WEB.svg" alt="logo" id="logo"></a>
         <img src="./img/hamburger.svg" alt="" class="no-desk" id="hamburger" onclick="openNav()" />
         <img src="./img/cross.svg" alt="" class="no-display no-desk" id="cross" onclick="closeNav()" />
         <nav class="no-display">
             <ul>
                 <li>
-                    <a href="index.html" class="active">Accueil</a>
+                    <a class="active">Accueil</a>
                 </li>
                 <li>
                     <a href="mode_d_emploi.html">Mode d'emploi</a>
@@ -36,11 +36,11 @@
             </ul>
         </nav>
     </header>
+
     <div class="main">
         <div class="image">
             <img src="img/nature.svg" alt="logo Co2Web" />
         </div>
-
         <div class="index__texte">
             <h1 class="title">Roulez vert à Marseille avec notre Vélib'zéro CO2</h1>
             <p class="description">
@@ -54,12 +54,8 @@
                 <br />
                 <button class="second_btn">En savoir Plus</button>
             </div>
-
         </div>
     </div>
-
-
-
 
     <footer>
         <hr />
@@ -69,7 +65,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="index.html" class="active">Accueil</a>
+                    <a class="active">Accueil</a>
                 </li>
                 <li>
                     <a href="mode_d_emploi.html">Mode d'emploi</a>

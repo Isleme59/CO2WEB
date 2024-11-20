@@ -33,8 +33,9 @@ function sizeNav() {
 	}
 };
 
-window.addEventListener("resize", () => {
-	sizeNav();
-	console.log(window.innerWidth);
-});
-
+window.addEventListener(
+	"resize", () => {
+		sizeNav();
+		console.log(window.innerWidth);
+	}
+);
