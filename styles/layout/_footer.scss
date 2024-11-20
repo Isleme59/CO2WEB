@@ -1,6 +1,6 @@
 footer {
 	font-family: Montserrat;
-	height: 25vh;
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
 	position: fixed;
@@ -45,7 +45,8 @@ footer {
 
 @media #{$mqTabletp} {
 	footer {
-		height: 15vh;
+		max-height: 15vh;
+		height: fit-content;
 
 		nav {
 			align-self: end;
@@ -54,7 +55,17 @@ footer {
 }
 
 @media #{$mqNotebookp} {
+
 	footer {
-		height: 10vh;
+		height: 80px;
+
+		hr {
+			margin: 0;
+		}
+
+		nav {
+			padding: 1rem;
+			background: none;
+		}
 	}
 }
