@@ -14,6 +14,6 @@
 
 @media #{$mqNotebookp} {
 	.no-desk {
-		display: none;
+		display: none !important;
 	}
 }
