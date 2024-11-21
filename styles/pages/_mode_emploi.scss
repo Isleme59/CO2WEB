@@ -3,10 +3,136 @@
     width: 100vw;
     box-sizing: border-box;
 
+    /* ------------------ TEST  ------------------------- */
+    #discs {
+
+        @media #{$mqNotebookp} {
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            top: 1rem;
+            right: 16rem;
+
+        }
+
+        #disc-1 {
+
+
+            @media #{$mqNotebookp} {
+                position: absolute;
+                border-radius: 50%;
+                height: 100px;
+                width: 100px;
+                background-color: $vert1;
+                top: 140px;
+                right: 170px;
+            }
+        }
+
+        #disc-2 {
+
+
+            @media #{$mqNotebookp} {
+                position: absolute;
+                border-radius: 50%;
+                height: 15px;
+                width: 15px;
+                background-color: $vert2;
+                right: 180px;
+                top: 260px;
+            }
+        }
+
+        #disc-3 {
+
+
+            @media #{$mqNotebookp} {
+                position: absolute;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                background-color: $vert3;
+                right: 120px;
+                top: 210px;
+            }
+        }
+    }
+
+    #discs2 {
+        @media #{$mqNotebookp} {
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            top: 22rem;
+            right: 35.5rem;
+
+        }
+
+        #discs2__disc-1 {
+
+
+            @media #{$mqNotebookp} {
+                position: absolute;
+                border-radius: 50%;
+                height: 100px;
+                width: 100px;
+                background-color: $vert3;
+                top: 140px;
+                right: 170px;
+            }
+        }
+
+        #discs2__disc-2 {
+
+
+            @media #{$mqNotebookp} {
+                position: absolute;
+                border-radius: 50%;
+                height: 15px;
+                width: 15px;
+                background-color: $vert1;
+                right: 180px;
+                top: 250px;
+            }
+        }
+
+        #discs2__disc-3 {
+
+
+            @media #{$mqNotebookp} {
+                position: absolute;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                background-color: $vert1;
+                right: 120px;
+                top: 210px;
+            }
+        }
+    }
+
+
+    /* -------------- TEST --------------------*/
+
+
     h1 {
         font-size: 1.7rem;
         line-height: 2rem;
         padding: 1rem 2rem 0;
+
+        @media #{$mqNotebook} {
+            padding-left: 5rem;
+            padding-top: 2cqi;
+        }
+
+        @media #{$mqDesktop} {
+            padding-left: 15rem;
+            padding-top: 3rem;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            width: 250px;
+        }
+
     }
 
     .slider {
@@ -14,34 +140,171 @@
         overflow: hidden;
         position: relative;
 
+        @media #{$mqTablet} {
+            height: 450px;
+        }
+
+        @media #{$mqNotebookp} {
+            height: 600px;
+        }
+
         .slides {
             display: flex;
             width: 500vw;
             height: 100%;
             transition: 0.2s;
 
+            @media #{$mqNotebookp} {
+                width: 100vw;
+                padding-top: 65px;
+                justify-content: space-evenly;
+            }
+
+            @media #{$mqDesktop} {
+                justify-content: center;
+                gap: 80px;
+            }
+
             .slide {
                 width: 100vw;
                 padding: 2rem;
 
+                @media #{$mqTablet} {
+                    padding: 3.5rem 2rem 2rem 2rem;
+                }
+
+                @media #{$mqNotebook} {
+                    width: 300px;
+                    height: 350px;
+                    @include verticalCenter;
+                    flex-direction: column;
+
+                    &#slide2 {
+                        box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.185);
+                        border-radius: 25px;
+                        position: relative;
+                        overflow: hidden;
+                        background-color: white;
+                        z-index: 1;
+
+                    }
+
+                    .slide2__circle-border {
+                        width: 150px;
+                        height: 150px;
+                        background: linear-gradient(160deg,
+                                $vert4 1%,
+                                $vert3 20%,
+                                $vert1 100%);
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -50px;
+                        right: -50px;
+                        @include verticalCenter;
+
+                        .slide2__circle-bg {
+                            background-color: white;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+
+                        }
+
+                    }
+                }
+
+                @media #{$mqDesktop} {
+                    width: 350px;
+                    height: 450px;
+                    @include verticalCenter;
+                    flex-direction: column;
+
+                    &#slide2 {
+                        box-shadow: 0 0 20px 0 rgba(128, 128, 128, 0.185);
+                        border-radius: 25px;
+                        position: relative;
+                        overflow: hidden;
+                        background-color: white;
+                        z-index: 1;
+
+                    }
+
+                    .slide2__circle-border {
+                        width: 150px;
+                        height: 150px;
+                        background: linear-gradient(160deg,
+                                $vert4 1%,
+                                $vert3 20%,
+                                $vert1 100%);
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -50px;
+                        right: -50px;
+                        @include verticalCenter;
+
+                        .slide2__circle-bg {
+                            background-color: white;
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+
+                        }
+
+                    }
+                }
+
+
 
                 .slide__image {
+                    height: 135px;
                     @include verticalCenter;
+
+                    @media #{$mqTablet} {
+                        height: 50%;
+
+
+                        img {
+                            height: 100%;
+                        }
+
+                    }
+
+
+                    @media #{$mqNotebook} {
+                        height: 35%;
+
+                        img {
+                            height: 100%;
+                        }
+                    }
+
                 }
 
                 .slide__paragraphe {
                     text-align: center;
 
+                    @media #{$mqTablet} {
+                        padding: 0 2rem;
+                    }
+
                     h2 {
-                        padding: 2rem 0;
+                        padding: 1rem 0 1.85rem;
                         font-size: 1.5rem;
                         font-family: "Montserrat";
                         font-weight: 500;
+
+                        @media #{$mqTablet} {
+                            padding: 3rem 0 2rem;
+                        }
+
+                        @media #{$mqNotebook} {
+                            font-size: 1.2rem;
+                        }
                     }
 
                     p {
                         font-family: "roboto";
-                        font-size: 18px;
+                        font-size: 17px;
                         font-weight: 300;
                     }
                 }
@@ -81,12 +344,30 @@
         cursor: pointer;
         z-index: 1;
 
+        @media #{$mqTablet} {
+            top: 120px;
+            width: 70px;
+            height: 70px;
+        }
+
+        @media #{$mqNotebookp} {
+            display: none;
+        }
+
         &.right {
             right: 0;
+
+            @media #{$mqTablet} {
+                right: 1rem;
+            }
         }
 
         &.left {
             rotate: 180deg;
+
+            @media #{$mqTablet} {
+                left: 1rem;
+            }
         }
     }
 }

@@ -7,6 +7,9 @@ const indexPoints = document.querySelectorAll(".index");
 let compteur = 1;
 slides.insertBefore(lastSlideClone, slides.children[0]);
 slides.appendChild(firstSlideClone);
+firstSlideClone.classList.add("no-desk");
+lastSlideClone.classList.add("no-desk");
+
 
 btnRight.addEventListener("click", () => {
     if (window.innerWidth <= 1365) {
@@ -46,8 +49,16 @@ btnLeft.addEventListener("click", () => {
     }
 })
 
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 1366) {
+        slides.style.transform = "translateX(0vw)";
+    }
+})
 window.onload = () => {
-    slides.style.transform = "translateX(" + compteur * -100 + "vw)";
-    indexPoints[compteur - 1].classList.toggle("active");
+    if (window.innerWidth < 1366) {
+        slides.style.transform = "translateX(" + compteur * -100 + "vw)";
+        indexPoints[compteur - 1].classList.toggle("active");
+    }
+
 }
 
