@@ -1,29 +1,26 @@
 const NAV = document.querySelector("nav");
-const CROSS = document.getElementById("cross");
-const BURGER = document.getElementById("hamburger");
+let iconAction;
 const WIDE = 1366;
 
-let navClass = NAV.getAttribute("class");
-let brgClass = BURGER.getAttribute("class");
-let crsClass = CROSS.getAttribute("class");
-
 function openNav() {
+	iconAction = document.getElementById("hamburger");
 	NAV.setAttribute("class", "display");
-	CROSS.setAttribute("class", "display");
-	BURGER.setAttribute("class", "no-display");
-}
+	iconAction.setAttribute("onclick", "closeNav()");
+	iconAction.setAttribute("id", "cross");
+};
 
 function closeNav() {
-	NAV.setAttribute("class", "no-display");
-	CROSS.setAttribute("class", "no-display");
-	BURGER.setAttribute("class", "display");
-}
+	iconAction = document.getElementById("cross");
+	NAV.setAttribute("class", "hide");
+	iconAction.setAttribute("id", "hamburger");
+	iconAction.setAttribute("onclick", "openNav()");
+};
 
 function wideNav() {
 	NAV.setAttribute("class", "display");
 	BURGER.setAttribute("class", "no-display");
 	CROSS.setAttribute("class", "no-display");
-}
+};
 
 function sizeNav() {
 	if (window.innerWidth >= WIDE) {
