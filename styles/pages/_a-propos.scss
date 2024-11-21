@@ -389,7 +389,7 @@
                     position: absolute;
                     left: 10px;
                     top: 45px;
-                    rotate: 180deg;
+                    transform: rotate(180deg);
 
                     @media #{$mqTablet} {
                         width: 3.5rem;
