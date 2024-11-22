@@ -6,13 +6,24 @@
     /* ------------------ TEST  ------------------------- */
     #discs {
 
-        @media #{$mqNotebookp} {
+        @media #{$mqNotebook} {
             position: absolute;
             height: 250px;
             width: 250px;
-            top: 1rem;
-            right: 16rem;
+            top: calc(50vh - 245px);
+            transform: translate(50%, -50%);
+            right: calc(50vw - 275px);
+            z-index: -1;
+        }
 
+        @media #{$mqDesktop} {
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            top: calc(50vh - 275px);
+            transform: translate(50%, -50%);
+            right: calc(50vw - 300px);
+            z-index: -1;
         }
 
         #disc-1 {
@@ -59,12 +70,23 @@
     }
 
     #discs2 {
-        @media #{$mqNotebookp} {
+        @media #{$mqNotebook} {
             position: absolute;
             height: 250px;
             width: 250px;
-            top: 22rem;
-            right: 35.5rem;
+            top: calc(50vh + 10px);
+            right: calc(50vw - 45px);
+            z-index: -1;
+
+        }
+
+        @media #{$mqDesktop} {
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            top: calc(50vh + 80px);
+            right: calc(50vw - 15px);
+            z-index: -1;
 
         }
 
@@ -126,7 +148,7 @@
         }
 
         @media #{$mqDesktop} {
-            padding-left: 15rem;
+            padding-left: 16rem;
             padding-top: 3rem;
             font-size: 2rem;
             line-height: 2.5rem;
@@ -158,6 +180,7 @@
                 width: 100vw;
                 padding-top: 65px;
                 justify-content: space-evenly;
+                transition: 0s;
             }
 
             @media #{$mqDesktop} {
