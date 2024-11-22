@@ -7,14 +7,17 @@ footer {
 	bottom: 0;
 	z-index: 998;
 	background-color: $blanc;
+	width: 100%;
+	padding: 0 5px;
 
 	hr {
-		width: 100vw;
+		width: 100%;
 		background: linear-gradient(to left, $vert1, $vert2, $vert3, $vert4);
 		border: none;
 		height: 2px;
 		box-sizing: border-box;
 		margin-top: 0;
+		align-self: center;
 	}
 
 	p,
