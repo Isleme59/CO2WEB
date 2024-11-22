@@ -39,12 +39,18 @@
         display: block;
         animation: circles-appear 0.5s forwards;
       }
+      &#bottom-right-leaf {
+        right: 300px;
+      }
     }
 
     @media #{$mqDesktop} {
       &#bottom-left-leaf {
         display: block;
         animation: apparition 0.5s forwards;
+      }
+      &#bottom-right-leaf {
+        right: 500px;
       }
     }
   }
@@ -227,7 +233,7 @@
           flex-wrap: wrap;
           padding: 40px 80px;
 
-          &>label:first-child {
+          & > label:first-child {
             transform: translateY(235px);
           }
 
@@ -249,7 +255,7 @@
           flex-direction: column;
           height: 80%;
 
-          &>label:first-child {
+          & > label:first-child {
             //EMAIL
             width: 45%;
             transform: translate(0px, 170px);
@@ -261,7 +267,7 @@
             transform: translate(0px, 170px);
           }
 
-          &>label:nth-child(3) {
+          & > label:nth-child(3) {
             //TELEPHONE
             width: 45%;
             transform: translate(455px, 50px);
@@ -349,10 +355,12 @@
 
         input[type="submit"] {
           width: 100%;
-          background: linear-gradient(160deg,
-              $vert4 1%,
-              $vert3 20%,
-              $vert1 100%);
+          background: linear-gradient(
+            160deg,
+            $vert4 1%,
+            $vert3 20%,
+            $vert1 100%
+          );
           box-shadow: 0 5px 22px 0px rgba(1, 82, 1, 0.56);
           color: white;
           padding: 10px;
