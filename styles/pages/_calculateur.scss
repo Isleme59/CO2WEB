@@ -145,7 +145,8 @@
 			&#fern {
 				position: absolute;
 				display: block;
-				animation: apparition 2s forwards;
+				animation: apparition 0.5s forwards;
+
 				width: 250px;
 				z-index: 0;
 				transition: 1s;
