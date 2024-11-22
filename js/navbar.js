@@ -18,8 +18,7 @@ function closeNav() {
 
 function wideNav() {
 	NAV.setAttribute("class", "display");
-	BURGER.setAttribute("class", "no-display");
-	CROSS.setAttribute("class", "no-display");
+	iconAction.setAttribute("class", "no-display");
 };
 
 function sizeNav() {
@@ -34,5 +33,11 @@ window.addEventListener(
 	"resize", () => {
 		sizeNav();
 		console.log(window.innerWidth);
+	}
+);
+
+window.onload(
+	() => {
+		sizeNav();
 	}
 );
