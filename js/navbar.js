@@ -1,3 +1,4 @@
+const BODY = document.querySelector("body");
 const NAV = document.querySelector("nav");
 let iconAction;
 const WIDE = 1366;
@@ -18,13 +19,15 @@ function closeNav() {
 
 function wideNav() {
 	NAV.setAttribute("class", "display");
-	iconAction.setAttribute("class", "no-display");
+	if (iconAction) iconAction.setAttribute("class", "no-display");
 };
 
 function sizeNav() {
 	if (window.innerWidth >= WIDE) {
 		wideNav();
 	} else {
+		iconAction = document.getElementById("hamburger");
+		iconAction.setAttribute("onclick", "openNav()");
 		closeNav();
 	}
 };
@@ -36,8 +39,4 @@ window.addEventListener(
 	}
 );
 
-window.onload(
-	() => {
-		sizeNav();
-	}
-);
+document.addEventListener("DOMContentLoaded", () => sizeNav());
