@@ -6,24 +6,17 @@
     <title>Contact</title>
     <link rel="stylesheet" href="styles/main.css" />
   </head>
-  <body onload="sizeNav()">
+  <body>
     <header>
-      <a href="index.html"><img src="./img/CO2WEB.svg" alt="logo" id="logo"></a>
-      <img
-        src="./img/hamburger.svg"
-        alt=""
-        class="no-desk"
-        id="hamburger"
-        onclick="openNav()"
-      />
-      <img
-        src="./img/cross.svg"
-        alt=""
-        class="no-display no-desk"
-        id="cross"
-        onclick="closeNav()"
-      />
-      <nav class="no-display">
+      <a href="index.html"
+        ><img src="./img/CO2WEB.svg" alt="logo" id="logo"
+      /></a>
+      <div id="hamburger">
+        <div class="menu-icon no-desk" id="stroke-1"></div>
+        <div class="menu-icon no-desk" id="stroke-2"></div>
+        <div class="menu-icon no-desk" id="stroke-3"></div>
+      </div>
+      <nav>
         <ul>
           <li>
             <a href="index.html">Accueil</a>
@@ -35,13 +28,13 @@
             <a href="trouver_un_velib.html">Trouver un velib</a>
           </li>
           <li>
-            <a href="calculateur.html">Calculateur</a>
+            <a class="active">Calculateur</a>
           </li>
           <li>
             <a href="a_propos.html">&Agrave; propos</a>
           </li>
           <li>
-            <a class="active">Contact</a>
+            <a href="contact.html">Contact</a>
           </li>
         </ul>
       </nav>
