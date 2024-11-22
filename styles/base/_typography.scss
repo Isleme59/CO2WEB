@@ -17,4 +17,8 @@ h1 {
 
 .active {
   font-weight: 600 !important;
+
+  &:hover {
+    cursor: default;
+  }
 }
