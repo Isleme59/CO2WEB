@@ -140,7 +140,7 @@
 
 		h1 {
 			font-size: 3rem;
-			margin-top: 1rem;
+			margin-top: 0;
 		}
 
 		.desk-deco {
@@ -150,30 +150,31 @@
 			&#fern {
 				position: absolute;
 				display: block;
-				width: 425px;
+				width: 300px;
 				z-index: 0;
 				transition: 1s;
 			}
 
 			&#leaves {
-				transform: translate(-600px, -75px);
+				transform: translate(-475px, -50px);
+
 			}
 
 			&#leaf {
-				transform: translate(-600px, 250px) rotate(-10deg);
+				transform: translate(-475px, 250px) rotate(-10deg);
 			}
 
 			&#fern {
-				transform: translate(575px, 250px) rotate(20deg);
+				transform: translate(500px, 250px) rotate(20deg);
 			}
 
 			&#top-right-circles {
 				display: block;
 				position: absolute;
-				height: 475px;
-				width: 450px;
+				height: 450px;
+				width: 425px;
 				top: -375px;
-				right: -375px;
+				right: -350px;
 				z-index: 1;
 
 				#circle-1,
@@ -183,40 +184,41 @@
 					position: absolute;
 					border-radius: 50%;
 					background: $blanc;
-					border-width: 30px;
+					border-width: 25px;
 					border-style: solid;
 				}
 
 				#circle-1 {
 					border-radius: 50%;
-					height: 140px;
-					width: 140px;
+					height: 120px;
+					width: 120px;
 					bottom: 0px;
 					border-color: $vert1;
 				}
 
 				#circle-2 {
-					height: 80px;
-					width: 80px;
-					right: 80px;
-					top: 170px;
+					height: 65px;
+					width: 65px;
+					right: 125px;
+					top: 180px;
 					border-color: $vert2;
 				}
 
 				#circle-3 {
 					border-radius: 50%;
-					height: 45px;
-					width: 45px;
-					right: 100px;
+					height: 40px;
+					width: 40px;
+					right: 130px;
 					bottom: 20px;
-					border-color: $vert3;
+					border-color: $vert4;
 				}
 			}
 		}
 
 		form {
-			width: 1080px;
-			padding: 1rem 120px;
+			width: 896px;
+			max-width: 1080px;
+			padding: 1rem 90px;
 			height: 500px;
 			margin-top: 3rem;
 			max-height: unset;
@@ -241,6 +243,75 @@
 					font-size: 0.75rem;
 				}
 			}
+		}
+	}
+}
+
+@media #{$mqDesktop} {
+
+	#calc-main {
+
+		h1 {
+			margin-top: 1rem;
+		}
+
+		.desk-deco {
+
+			&#leaves,
+			&#leaf,
+			&#fern {
+				width: 425px;
+			}
+
+			&#leaves {
+				transform: translate(-600px, -75px);
+			}
+
+			&#leaf {
+				transform: translate(-600px, 250px) rotate(-10deg);
+			}
+
+			&#fern {
+				transform: translate(575px, 250px) rotate(20deg);
+			}
+
+			&#top-right-circles {
+				height: 475px;
+				width: 450px;
+				top: -375px;
+				right: -375px;
+
+				#circle-1,
+				#circle-2,
+				#circle-3 {
+					border-width: 30px;
+				}
+
+				#circle-1 {
+					height: 140px;
+					width: 140px;
+					bottom: 0px;
+				}
+
+				#circle-2 {
+					height: 80px;
+					width: 80px;
+					right: 80px;
+					top: 170px;
+				}
+
+				#circle-3 {
+					height: 45px;
+					width: 45px;
+					right: 100px;
+					bottom: 20px;
+				}
+			}
+		}
+
+		form {
+			width: 1080px;
+			padding: 1rem 120px;
 		}
 	}
 }
