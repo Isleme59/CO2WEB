@@ -25,12 +25,10 @@
     @media #{$mqTabletp} {
       &#top-left-leaves {
         display: block;
-        animation: apparition 0.5s forwards;
       }
 
       &#bottom-right-leaf {
         display: block;
-        animation: apparition 0.5s forwards;
       }
     }
 
@@ -47,7 +45,6 @@
     @media #{$mqDesktop} {
       &#bottom-left-leaf {
         display: block;
-        animation: apparition 0.5s forwards;
       }
       &#bottom-right-leaf {
         right: 500px;
@@ -71,14 +68,17 @@
   }
 
   #bottom-left-leaf {
-    position: absolute;
-    background-image: url("/img/leaf.svg");
-    background-repeat: no-repeat;
-    z-index: -1;
-    height: 500px;
-    width: 500px;
-    transform: translate(-305px, 220px) rotate(-10deg);
-    transition: 1s;
+    transform: translate(0, 0px);
+    @media #{$mqDesktop} {
+      position: absolute;
+      background-image: url("/img/leaf.svg");
+      background-repeat: no-repeat;
+      z-index: -1;
+      height: 500px;
+      width: 500px;
+      transform: scale(1) translate(-305px, 220px) rotate(-10deg);
+      transition: 1s;
+    }
   }
 
   #top-right-circles {
@@ -390,16 +390,6 @@
         }
       }
     }
-  }
-}
-
-@keyframes apparition {
-  0% {
-    transform: translate(0px, 0px);
-  }
-
-  100% {
-    transform: translate(inherit, inherit);
   }
 }
 
