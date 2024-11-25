@@ -35,6 +35,7 @@
 		justify-content: space-evenly;
 		z-index: 0;
 		width: 90vw;
+		max-width: 896px;
 		height: 350px;
 
 		label {
@@ -73,6 +74,9 @@
 		input[type=submit] {
 			border: none;
 			font-size: 1.4rem;
+			width: 100%;
+			max-width: 480px;
+			align-self: center;
 			border-radius: 500px;
 			padding: 0.5rem 1rem;
 			background: linear-gradient(160deg, $vert4 0%, $vert3 33%, $vert2 67%, $vert1 100%);
