@@ -205,6 +205,7 @@
     }
 
     @media #{$mqNotebookp} {
+      height: 650px;
       width: 1000px;
     }
 
@@ -229,11 +230,20 @@
           padding: 40px 80px;
 
           & > label:first-child {
-            transform: translateY(235px);
+            transform: translateY(240px);
           }
 
           #email {
-            transform: translateY(235px);
+            transform: translateY(240px);
+          }
+        }
+        @media #{$mqNotebookp} {
+          & > label:first-child {
+            transform: translateY(270px);
+          }
+
+          #email {
+            transform: translateY(270px);
           }
         }
 
@@ -253,25 +263,25 @@
           & > label:first-child {
             //EMAIL
             width: 45%;
-            transform: translate(0px, 170px);
+            transform: translate(0px, 200px);
           }
 
           #email {
             // EMAIL
             width: 45%;
-            transform: translate(0px, 170px);
+            transform: translate(0px, 200px);
           }
 
           & > label:nth-child(3) {
             //TELEPHONE
             width: 45%;
-            transform: translate(455px, 50px);
+            transform: translate(455px, 80px);
           }
 
           #tel {
             // TELEPHONE
             width: 45%;
-            transform: translate(455px, 50px);
+            transform: translate(455px, 80px);
           }
         }
 
@@ -286,7 +296,10 @@
         input::placeholder,
         textarea::placeholder {
           color: lightgray;
-          font-size: 1.2rem;
+          font-size: 1rem;
+          @media #{$mqNotebookp} {
+            font-size: 1.2rem;
+          }
 
           @media #{$mqDesktop} {
             font-size: 1.2rem;
@@ -296,7 +309,10 @@
         label {
           display: block;
           margin-bottom: 10px;
-          font-size: 1.3rem;
+          font-size: 1rem;
+          @media #{$mqNotebookp} {
+            font-size: 1.3rem;
+          }
         }
 
         input {
@@ -325,7 +341,10 @@
           }
 
           @media #{$mqTabletp} {
-            transform: translateY(-220px);
+            transform: translateY(-240px);
+          }
+          @media #{$mqNotebookp} {
+            transform: translateY(-260px);
           }
 
           @media #{$mqDesktop} {

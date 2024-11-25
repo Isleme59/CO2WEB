@@ -198,6 +198,9 @@
     img {
       width: 100%;
       border-radius: 0 0 0 50%;
+      @media #{$mqDesktop} {
+        transform: translateY(-150px);
+      }
     }
   }
 }
