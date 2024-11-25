@@ -117,10 +117,20 @@
 		z-index: 1;
 		background-color: $blanc;
 		padding: 2rem;
-		border-radius: 2rem;
+		border-radius: 1rem;
 		width: 90vw;
+		max-width: 1200px;
+		min-height: 120px;
+		justify-content: center;
+		align-items: center;
 		box-sizing: border-box;
 		@extend %shadow;
+
+		p {
+			align-self: center;
+			margin: auto;
+			text-align: center;
+		}
 	}
 }
 
@@ -175,9 +185,9 @@
 			&#top-right-circles {
 				display: block;
 				position: absolute;
-				height: 450px;
+				height: 425px;
 				width: 425px;
-				top: -375px;
+				top: -350px;
 				right: -350px;
 				z-index: 1;
 
@@ -276,12 +286,12 @@
 			}
 
 			&#fern {
-				transform: translate(575px, 250px) rotate(20deg);
+				transform: translate(600px, 250px) rotate(20deg);
 			}
 
 			&#top-right-circles {
 				height: 475px;
-				width: 450px;
+				width: 435px;
 				top: -375px;
 				right: -375px;
 
