@@ -8,6 +8,7 @@ let carbonAmount = document.getElementById("carbonAmount");
 let displayStatus = "no-display";
 
 //comstantes
+const FLEX = "flex";
 const POPBG = document.getElementById("popupbg");
 const POPUP = document.getElementById("popup");
 const FORM = document.querySelector("form");
@@ -19,7 +20,7 @@ POPUP.setAttribute("class", displayStatus);
 POPBG.setAttribute("class", displayStatus);
 
 //calcul des émissions de carbone
-function carbonPrint(event){
+function carbonPrint(event) {
 	event.preventDefault();
 	distanceValue = DISTANCE.valueAsNumber;
 	workingDaysValue = WORKINGDAYS.valueAsNumber;
@@ -28,12 +29,12 @@ function carbonPrint(event){
 	total = Math.round((carboneDist * daysPerMonth) * 100) / 100;
 	console.log(total);
 	carbonAmount.innerHTML = total;
-	displayStatus = "display";
+	displayStatus = "display flex";
 	POPBG.setAttribute("class", displayStatus);
-	POPUP.setAttribute("class", displayStatus);
+	POPUP.setAttribute("class", FLEX);
 }
 
-function closePop(){
+function closePop() {
 	displayStatus = "no-display";
 	POPBG.setAttribute("class", displayStatus);
 	POPUP.setAttribute("class", displayStatus);
