@@ -52,6 +52,7 @@ btnLeft.addEventListener("click", () => {
 window.addEventListener("resize", () => {
     if (window.innerWidth >= 1366) {
         slides.style.transform = "translateX(0vw)";
+        indexPoints[compteur].classList.add("active");
     }
 })
 window.onload = () => {
