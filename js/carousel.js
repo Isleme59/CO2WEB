@@ -10,56 +10,53 @@ slides.appendChild(firstSlideClone);
 firstSlideClone.classList.add("no-desk");
 lastSlideClone.classList.add("no-desk");
 
-
 btnRight.addEventListener("click", () => {
-    if (window.innerWidth <= 1365) {
-        compteur = compteur + 1;
-        slides.style.transition = "0.2s";
+  if (window.innerWidth <= 1365) {
+    compteur = compteur + 1;
+    slides.style.transition = "0.2s";
+    slides.style.transform = "translateX(" + compteur * -100 + "vw)";
+    if (compteur == 4) {
+      compteur = 1;
+      indexPoints[2].classList.remove("active");
+      setTimeout(() => {
+        slides.style.transition = "0s";
         slides.style.transform = "translateX(" + compteur * -100 + "vw)";
-        if (compteur == 4) {
-            compteur = 1;
-            indexPoints[2].classList.remove("active");
-            setTimeout(() => {
-                slides.style.transition = "0s";
-                slides.style.transform = "translateX(" + compteur * -100 + "vw)";
-            }, 200);
-        } else {
-            indexPoints[compteur - 2].classList.remove("active");
-        }
-        indexPoints[compteur - 1].classList.add("active");
+      }, 200);
+    } else {
+      indexPoints[compteur - 2].classList.remove("active");
     }
-})
+    indexPoints[compteur - 1].classList.add("active");
+  }
+});
 
 btnLeft.addEventListener("click", () => {
-    if (window.innerWidth <= 1365) {
-        compteur = compteur - 1;
-        slides.style.transition = "0.2s";
+  if (window.innerWidth <= 1365) {
+    compteur = compteur - 1;
+    slides.style.transition = "0.2s";
+    slides.style.transform = "translateX(" + compteur * -100 + "vw)";
+    if (compteur == 0) {
+      compteur = 3;
+      indexPoints[0].classList.remove("active");
+      setTimeout(() => {
+        slides.style.transition = "0s";
         slides.style.transform = "translateX(" + compteur * -100 + "vw)";
-        if (compteur == 0) {
-            compteur = 3;
-            indexPoints[0].classList.remove("active");
-            setTimeout(() => {
-                slides.style.transition = "0s";
-                slides.style.transform = "translateX(" + compteur * -100 + "vw)";
-            }, 200);
-        } else {
-            indexPoints[compteur].classList.remove("active");
-        }
-        indexPoints[compteur - 1].classList.add("active");
+      }, 200);
+    } else {
+      indexPoints[compteur].classList.remove("active");
     }
-})
+    indexPoints[compteur - 1].classList.add("active");
+  }
+});
 
 window.addEventListener("resize", () => {
-    if (window.innerWidth >= 1366) {
-        slides.style.transform = "translateX(0vw)";
-        indexPoints[compteur].classList.add("active");
-    }
-})
+  if (window.innerWidth >= 1366) {
+    slides.style.transform = "translateX(0vw)";
+    indexPoints[compteur - 1].classList.add("active");
+  }
+});
 window.onload = () => {
-    if (window.innerWidth < 1366) {
-        slides.style.transform = "translateX(" + compteur * -100 + "vw)";
-        indexPoints[compteur - 1].classList.toggle("active");
-    }
-
-}
-
+  if (window.innerWidth < 1366) {
+    slides.style.transform = "translateX(" + compteur * -100 + "vw)";
+    indexPoints[compteur - 1].classList.toggle("active");
+  }
+};
