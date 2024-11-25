@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
     <title>A propos</title>
 </head>
 
-<body id="a-propos" onload="sizeNav()">
+<body id="a-propos">
     <header>
         <a href="index.html"><img src="./img/CO2WEB.svg" alt="logo" id="logo"></a>
-        <img src="./img/hamburger.svg" alt="" class="no-desk" id="hamburger" onclick="openNav()">
-        <img src="./img/cross.svg" alt="" class="no-display no-desk" id="cross" onclick="closeNav()">
-        <nav class="no-display">
+        <div id="hamburger">
+            <div class="menu-icon no-desk" id="stroke-1"></div>
+            <div class="menu-icon no-desk" id="stroke-2"></div>
+            <div class="menu-icon no-desk" id="stroke-3"></div>
+        </div>
+        <nav>
             <ul>
                 <li>
                     <a href="index.html">Accueil</a>
@@ -48,14 +50,14 @@
 
 
 
-                <div class="main-block">
-                    <div class="slides">
+                <div class="first-slide__block">
+                    <div class="first-slide__elements">
 
                         <div class="green-block"></div>
-                        <img src="img/flyingLeaves.svg" alt="" id="leaves">
-                        <img src="img/pc.svg" alt="ordinateur" id="computer">
-                        <label for="slide2"><img src="img/right-arrow.svg" alt="" id="right-arrow"></label>
-                        <div class="paragraph2">
+                        <img src="img/flyingLeaves.svg" alt="feuilles" id="leaves-deco">
+                        <img src="img/pc.svg" alt="ordinateur" id="computer-deco">
+                        <label for="slide2"><img src="img/right-arrow.svg" alt="flèche droite" id="right-arrow"></label>
+                        <div class="paragraph-desk">
 
                             <h2>&Agrave; propos du projet</h2>
 
@@ -78,7 +80,7 @@
 
                 </div>
 
-                <div class="paragraph">
+                <div class="paragraph-mobile">
                     <p>Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris
                         incertus
                         agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes de industria
@@ -95,9 +97,9 @@
 
             <div class="second-slide" id="second-slide">
 
-                <div class="second-block">
-                    <label for="slide1"><img src="img/right-arrow.svg" alt="" id="left-arrow"></label>
-                    <div class="paragraph2">
+                <div class="second-slide__block">
+                    <label for="slide1"><img src="img/right-arrow.svg" alt="flèche gauche" id="left-arrow"></label>
+                    <div class="paragraph-desk">
 
                         <h2>&Agrave; propos du projet</h2>
 
@@ -111,10 +113,10 @@
                         </p>
                     </div>
 
-                    <img src="img/camping.svg" alt="" id="camping">
+                    <img src="img/camping.svg" alt="tente" id="camping">
                 </div>
 
-                <div class="paragraph">
+                <div class="paragraph-mobile">
                     <p>
 
                         Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego
