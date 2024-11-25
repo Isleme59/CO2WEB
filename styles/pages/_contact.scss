@@ -10,12 +10,16 @@
   }
 
   @media #{$mqNotebookp} {
+    transform: scale(0.8) translateY(-50px);
     font-size: 18px;
-    padding: 90px;
+    padding: 30px 90px 50px;
+    overflow: visible;
   }
 
   @media #{$mqDesktop} {
+    transform: scale(1) translateY(0px);
     padding: 150px 100px;
+    overflow: hidden;
   }
 
   /* ELEMENTS BG CACHES EN MOBILE */
@@ -61,6 +65,9 @@
     transform: scale(0.5) translate(-550px, -500px);
     z-index: -1;
     transition: 1s;
+    @media #{$mqTabletp} {
+      transform: scale(0.5) translate(-600px, -500px);
+    }
 
     @media #{$mqNotebookp} {
       transform: scale(0.7) translate(-450px, -250px);
