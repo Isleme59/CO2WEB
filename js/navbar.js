@@ -13,8 +13,10 @@ function openNav() {
 function closeNav() {
 	iconAction = document.getElementById("cross");
 	NAV.setAttribute("class", "hide");
-	iconAction.setAttribute("id", "hamburger");
-	iconAction.setAttribute("onclick", "openNav()");
+	if (iconAction) {
+		iconAction.setAttribute("id", "hamburger");
+		iconAction.setAttribute("onclick", "openNav()");
+	}
 };
 
 function wideNav() {
@@ -35,7 +37,6 @@ function sizeNav() {
 window.addEventListener(
 	"resize", () => {
 		sizeNav();
-		console.log(window.innerWidth);
 	}
 );
 
