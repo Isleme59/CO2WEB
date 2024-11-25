@@ -1,200 +1,203 @@
 .index {
-
-    overflow: hidden;
-    font-family: Montserrat;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    background-color: #ffffff;
-    justify-content: center;
-
-    .main {
-        @media #{$mqTabletp} {
-            display: flex;
-            flex-direction: row-reverse;
-        }
-
-        @media #{$mqNotebookp} {
-            height: 80vh;
-        }
-
-
+  overflow: hidden;
+  font-family: Montserrat;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  background-color: #ffffff;
+  justify-content: center;
+  height: 90vh;
+  .main {
+    padding-bottom: 200px;
+    @media #{$mqTabletp} {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-bottom: 0;
+      height: 100%;
     }
 
-    .index__texte {
-        @media #{$mqTabletp} {
-            margin: 90px 8% 0 0;
-            width: 50%;
-        }
+    @media #{$mqNotebookp} {
+      height: 80vh;
+    }
+  }
 
-        @media #{$mqNotebookp} {
-            margin: 200px 50px 0 50px;
-            line-height: 2rem;
-        }
-
-        @media #{$mqDesktop} {
-            margin-right: 200px;
-            margin: 100px 200px 30px 90px;
-
-        }
-
-        .title {
-            position: relative;
-            font-size: 24px;
-            font-weight: 600;
-            padding: 30px 20px 0 20px;
-            letter-spacing: 0px;
-
-            @media #{$mqNotebookp} {
-                font-size: 1.8rem;
-                padding: 30px 20px 0 0;
-                line-height: 2rem;
-            }
-
-            @media #{$mqDesktop} {
-                font-size: 2.8rem;
-                line-height: 4rem;
-                padding-right: 150px;
-            }
-        }
-
-        .description {
-            font-size: 11px;
-            margin: 10px 20px 0 20px;
-            line-height: 1.5;
-            color: $noir;
-
-            @media #{$mqTabletp} {
-                font-size: 0.8rem;
-                margin: 30px 20px;
-            }
-
-            @media #{$mqNotebookp} {
-                font-size: 0.9rem;
-                margin: 30px 20px 30px 0;
-                line-height: 1.5rem;
-            }
-
-            @media #{$mqDesktop} {
-                font-size: 1.3rem;
-                line-height: 2.5rem;
-            }
-        }
+  .index__texte {
+    @media #{$mqTabletp} {
+      margin: 90px 20px 0 20px;
+      width: 30%;
     }
 
-    .button_container {
-        @media #{$mqNotebookp} {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 55%;
-            gap: 10px;
-        }
-
-        @media #{$mqNotebookp} {
-            justify-content: flex-start;
-        }
-
-        .premier_btn {
-            display: block;
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            margin: 20px auto 0;
-            background: linear-gradient(160deg,
-                    $vert4 1%,
-                    $vert3 20%,
-                    $vert1 100%);
-            border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            font-weight: 700;
-            width: 90%;
-            color: $blanc;
-            box-shadow: 0 5px 22px 0px rgba(1, 82, 1, 0.56);
-
-            @media #{$mqNotebookp} {
-                margin: 0 auto 0;
-                padding: 10px 5px;
-                font-size: 20px;
-                font-weight: 400;
-            }
-
-            @media #{$mqDesktop} {
-                padding: 10px 0;
-                width: 150px;
-                margin: 0;
-            }
-        }
-
-        .premier_btn:hover {
-            background: $vert1;
-
-        }
-
-
-        .second_btn {
-            background-color: #FFF;
-            color: #4CAF50;
-            border: 1px solid #4CAF50;
-            margin: 0 auto 25px;
-            border-radius: 25px;
-            display: block;
-            font-weight: 500;
-            cursor: pointer;
-            padding: 15px;
-            width: 90%;
-            font-size: 1rem;
-            transition: 0.2s;
-
-            @media #{$mqNotebookp} {
-                margin: 0 auto 0;
-                padding: 10px;
-            }
-
-            @media #{$mqDesktop} {
-                width: 150px;
-                padding: 10px 7px;
-                margin: 0;
-            }
-        }
-
-        .second_btn:hover {
-            background: $vert1;
-            color: $blanc;
-            transition: 0.2s;
-            box-shadow: 0 5px 22px 0px rgba(1, 82, 1, 0.56);
-        }
-
-
-        .texte_ou {
-            text-align: center;
-
-            @media #{$mqNotebookp} {
-                font-size: 0.7rem;
-            }
-        }
+    @media #{$mqNotebookp} {
+      margin: 60px 100px 0 50px;
+      width: 50%;
     }
 
-
-
-
-    .image {
-        width: 75vw;
-        margin-top: 20px;
-        display: flex;
-        justify-content: flex-end;
-        margin-left: auto;
-        min-height: 200px;
-
-        @media #{$mqTabletp} {
-            width: 50%;
-            margin-bottom: auto;
-        }
-
-        img {
-            width: 100%;
-            border-radius: 0 0 0 50%;
-        }
+    @media #{$mqDesktop} {
+      margin-right: 200px;
+      margin: 100px 200px 30px 90px;
     }
+
+    .title {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 30px 20px 0 20px;
+      letter-spacing: 0px;
+
+      @media #{$mqNotebookp} {
+        font-size: 2rem;
+        padding: 30px 20px 0 0;
+        line-height: 3rem;
+      }
+
+      @media #{$mqDesktop} {
+        font-size: 2.8rem;
+        line-height: 4rem;
+        padding-right: 150px;
+      }
+    }
+
+    .description {
+      font-size: 11px;
+      margin: 10px 20px 0 20px;
+      line-height: 1.5;
+      color: $noir;
+
+      @media #{$mqTabletp} {
+        font-size: 0.8rem;
+        margin: 30px 20px;
+      }
+
+      @media #{$mqNotebookp} {
+        font-size: 1.2rem;
+        margin: 30px 100px 30px 0;
+        line-height: 2.2rem;
+        font-weight: 500;
+      }
+
+      @media #{$mqDesktop} {
+        font-size: 1.4rem;
+        line-height: 2.7rem;
+      }
+    }
+  }
+
+  .button_container {
+    @media #{$mqNotebookp} {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 15px;
+    }
+
+    @media #{$mqNotebookp} {
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    .premier_btn {
+      display: block;
+      font-size: 16px;
+      padding: 15px;
+      text-align: center;
+      margin: 20px auto 0;
+      background: linear-gradient(160deg, $vert4 1%, $vert3 20%, $vert1 100%);
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 700;
+      width: 90%;
+      color: $blanc;
+      box-shadow: 0 5px 22px 0px rgba(1, 82, 1, 0.56);
+      max-width: 350px;
+
+      @media #{$mqNotebookp} {
+        margin: 0;
+        padding: 18px 7px;
+        border-radius: 500px;
+        font-size: 1.3rem;
+        font-weight: 400;
+        width: 200px;
+      }
+
+      @media #{$mqDesktop} {
+        border-radius: 500px;
+        padding: 20px 8px;
+        width: 220px;
+        margin: 0;
+        font-size: 1.5rem;
+      }
+    }
+
+    .premier_btn:hover {
+      background: $vert1;
+    }
+
+    .second_btn {
+      background-color: #fff;
+      color: $vert1;
+      border: 1px solid $vert1;
+      margin: 0 auto 25px;
+      border-radius: 25px;
+      display: block;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 15px;
+      width: 90%;
+      font-size: 1rem;
+      transition: 0.2s;
+      max-width: 350px;
+
+      @media #{$mqNotebookp} {
+        margin: 0;
+        padding: 18px 7px;
+        border-radius: 500px;
+        font-size: 1.3rem;
+        font-weight: 400;
+        width: 200px;
+      }
+
+      @media #{$mqDesktop} {
+        border-radius: 500px;
+        padding: 20px 8px;
+        width: 220px;
+        margin: 0;
+        font-size: 1.5rem;
+      }
+    }
+
+    .second_btn:hover {
+      background: $vert1;
+      color: $blanc;
+      transition: 0.2s;
+      box-shadow: 0 5px 22px 0px rgba(1, 82, 1, 0.56);
+    }
+
+    .texte_ou {
+      text-align: center;
+
+      @media #{$mqNotebookp} {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .image {
+    width: 75vw;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    min-height: 200px;
+
+    @media #{$mqTabletp} {
+      width: 70%;
+      margin-bottom: auto;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 0 0 0 50%;
+    }
+  }
 }

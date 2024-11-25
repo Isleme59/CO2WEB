@@ -1,7 +1,7 @@
 $vert1: #019961ff;
 $vert2: #3dad5cff;
 $vert3: #79c258ff;
-$vert4: #b5f653ff;
+$vert4: #b5d653ff;
 $noir: #030303ff;
 $blanc: #ffffffff;
 
@@ -12,13 +12,13 @@ $mqNotebookp: "screen and (min-width: 1366px)";
 $mqTabletp: "screen and (min-width: 768px)";
 
 %shadow {
-	box-shadow: 0 0 0.5rem 0 #00000020;
+  box-shadow: 0 0 0.5rem 0 #00000020;
 }
 
 %shadow-green {
-	box-shadow: 0 0.5rem 0.5rem 0 #3dad5c80;
+  box-shadow: 0 0.5rem 0.5rem 0 #3dad5c80;
 }
 
 %shadow-light-green {
-	box-shadow: 0 0.5rem 0.5rem 0 #79c25880;
+  box-shadow: 0 0.5rem 0.5rem 0 #79c25880;
 }

@@ -73,7 +73,7 @@
 
 
 
-            .paragraph {
+            .paragraph-mobile {
                 margin: 0 2rem 0 2rem;
 
                 @media #{$mqTablet} {
@@ -91,7 +91,7 @@
                 }
             }
 
-            .paragraph2 {
+            .paragraph-desk {
                 display: none;
 
                 @media #{$mqNotebookp} {
@@ -125,18 +125,18 @@
             .first-slide {
                 width: 100vw;
 
-                .main-block {
+                .first-slide__block {
                     position: relative;
                     height: 200px;
                     display: flex;
                     flex-direction: row;
                     margin-top: 100px;
 
-                    .slides {
+                    .first-slide__elements {
                         height: 100%;
                         width: 100%;
 
-                        #computer {
+                        #computer-deco {
                             width: 220px;
                             position: absolute;
                             top: 50px;
@@ -161,7 +161,7 @@
                             }
                         }
 
-                        #leaves {
+                        #leaves-deco {
                             width: 250px;
                             position: absolute;
                             top: -30px;
@@ -247,7 +247,7 @@
 
                         }
 
-                        .paragraph2 {
+                        .paragraph-desk {
                             @media #{$mqNotebook} {
                                 position: absolute;
                                 width: 450px;
@@ -338,14 +338,14 @@
         .second-slide {
             width: 100vw;
 
-            .second-block {
+            .second-slide__block {
                 position: relative;
                 height: 200px;
                 display: flex;
                 flex-direction: row;
                 margin-top: 100px;
 
-                .paragraph2 {
+                .paragraph-desk {
                     @media #{$mqNotebook} {
                         position: absolute;
                         width: 500px;
