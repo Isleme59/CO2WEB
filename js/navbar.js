@@ -30,7 +30,7 @@ function sizeNav() {
 	} else {
 		iconAction = document.getElementById("hamburger");
 		iconAction.setAttribute("onclick", "openNav()");
-		closeNav();
+		NAV.setAttribute("class", "no-display");
 	}
 };
 
