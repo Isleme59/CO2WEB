@@ -6,13 +6,14 @@
   align-items: center;
   background-color: #ffffff;
   justify-content: center;
-
+  height: 90vh;
   .main {
     padding-bottom: 200px;
     @media #{$mqTabletp} {
       display: flex;
       flex-direction: row-reverse;
       padding-bottom: 0;
+      height: 100%;
     }
 
     @media #{$mqNotebookp} {
@@ -22,13 +23,13 @@
 
   .index__texte {
     @media #{$mqTabletp} {
-      margin: 90px 8% 0 0;
-      width: 50%;
+      margin: 90px 20px 0 20px;
+      width: 30%;
     }
 
     @media #{$mqNotebookp} {
-      margin: 200px 150px 0 50px;
-      line-height: 2rem;
+      margin: 60px 100px 0 50px;
+      width: 50%;
     }
 
     @media #{$mqDesktop} {
@@ -38,15 +39,15 @@
 
     .title {
       position: relative;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 600;
       padding: 30px 20px 0 20px;
       letter-spacing: 0px;
 
       @media #{$mqNotebookp} {
-        font-size: 2.4rem;
+        font-size: 2rem;
         padding: 30px 20px 0 0;
-        line-height: 3.5rem;
+        line-height: 3rem;
       }
 
       @media #{$mqDesktop} {
@@ -190,7 +191,7 @@
     min-height: 200px;
 
     @media #{$mqTabletp} {
-      width: 50%;
+      width: 70%;
       margin-bottom: auto;
     }
 
