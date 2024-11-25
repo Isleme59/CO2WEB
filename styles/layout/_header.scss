@@ -137,6 +137,10 @@ header {
 		height: 70px;
 		border-bottom: solid 1px #c0c0c080;
 
+		img {
+			margin: calc(1rem - 1px) 0 calc(1rem - 1px) 3rem;
+		}
+
 		nav.display {
 			height: fit-content;
 			padding: 0 1rem 0;
