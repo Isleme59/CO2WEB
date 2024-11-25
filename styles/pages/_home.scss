@@ -1,5 +1,5 @@
 .index {
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: Montserrat;
   padding: 0;
   margin: 0;
@@ -23,7 +23,7 @@
 
   .index__texte {
     @media #{$mqTabletp} {
-      margin: 90px 20px 0 20px;
+      margin: 70px 20px 0 20px;
       width: 30%;
     }
 
@@ -51,8 +51,7 @@
       }
 
       @media #{$mqDesktop} {
-        font-size: 2.8rem;
-        line-height: 4rem;
+        font-size: 2.2rem;
         padding-right: 150px;
       }
     }
@@ -76,8 +75,7 @@
       }
 
       @media #{$mqDesktop} {
-        font-size: 1.4rem;
-        line-height: 2.7rem;
+        line-height: 2.4rem;
       }
     }
   }
@@ -88,11 +86,6 @@
       align-items: center;
       justify-content: flex-start;
       gap: 15px;
-    }
-
-    @media #{$mqNotebookp} {
-      justify-content: flex-start;
-      gap: 20px;
     }
 
     .premier_btn {
@@ -109,7 +102,12 @@
       width: 90%;
       color: $blanc;
       box-shadow: 0 5px 22px 0px rgba(1, 82, 1, 0.56);
-      max-width: 350px;
+      max-width: 200px;
+
+      @media #{$mqTabletp} {
+        font-size: 1.3rem;
+        font-weight: normal;
+      }
 
       @media #{$mqNotebookp} {
         margin: 0;
@@ -122,8 +120,7 @@
 
       @media #{$mqDesktop} {
         border-radius: 500px;
-        padding: 20px 8px;
-        width: 220px;
+        padding: 15px 8px;
         margin: 0;
         font-size: 1.5rem;
       }
@@ -138,7 +135,7 @@
       color: $vert1;
       border: 1px solid $vert1;
       margin: 0 auto 25px;
-      border-radius: 25px;
+      border-radius: 500px;
       display: block;
       font-weight: 500;
       cursor: pointer;
@@ -146,23 +143,24 @@
       width: 90%;
       font-size: 1rem;
       transition: 0.2s;
-      max-width: 350px;
+      max-width: 200px;
+
+      @media #{$mqTabletp} {
+        font-size: 1.3rem;
+      }
 
       @media #{$mqNotebookp} {
         margin: 0;
         padding: 18px 7px;
-        border-radius: 500px;
         font-size: 1.3rem;
         font-weight: 400;
         width: 200px;
       }
 
       @media #{$mqDesktop} {
-        border-radius: 500px;
-        padding: 20px 8px;
-        width: 220px;
+        padding: 15px 8px;
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
     }
 
@@ -193,6 +191,10 @@
     @media #{$mqTabletp} {
       width: 70%;
       margin-bottom: auto;
+      max-height: 700px;
+    }
+    @media #{$mqNotebookp} {
+      max-height: max-content;
     }
 
     img {
