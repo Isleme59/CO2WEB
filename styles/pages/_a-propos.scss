@@ -3,7 +3,7 @@
     width: 100%;
     height: calc(100vh - 70px);
 
-    @media #{$mqNotebookp} {
+    @media screen and (min-width: 1250px) {
         overflow: hidden;
     }
 
@@ -14,7 +14,7 @@
         font-size: 1.75rem;
         margin: 0 2rem 0 1rem;
 
-        @media #{$mqNotebookp} {
+        @media screen and (min-width: 1250px) {
             display: none;
         }
     }
@@ -40,7 +40,7 @@
         // Fin transition slider
 
         h2 {
-            @media #{$mqNotebook} {
+            @media screen and (min-width: 1250px) {
                 font-family: "Montserrat";
                 font-size: 1.75rem;
                 margin-bottom: 40px;
@@ -65,7 +65,7 @@
             transition: transform 0.5s ease;
             width: 200vw;
 
-            @media #{$mqNotebookp} {
+            @media screen and (min-width: 1250px) {
                 height: 100%;
             }
 
@@ -74,18 +74,20 @@
 
 
             .paragraph-mobile {
-                margin: 0 2rem 0 2rem;
+                margin: 0 2rem 2rem;
+
+                padding-bottom: 5rem;
 
                 @media #{$mqTablet} {
                     padding-top: 50px;
                 }
 
-                @media #{$mqNotebookp} {
+                @media screen and (min-width: 1250px) {
                     display: none;
                 }
 
                 .no-desk {
-                    @media #{$mqNotebook} {
+                    @media screen and (min-width: 1250px) {
                         display: none;
                     }
                 }
@@ -94,7 +96,7 @@
             .paragraph-desk {
                 display: none;
 
-                @media #{$mqNotebookp} {
+                @media screen and (min-width: 1250px) {
                     display: block;
                     line-height: 1.75rem;
                 }
@@ -102,8 +104,10 @@
 
 
             p {
-                font-family: "Roboto regular", sans-serif;
+                font-family: "Roboto", sans-serif;
+                font-weight: 300;
                 font-size: 18px;
+                line-height: 1.2rem;
                 padding-top: 10px;
                 padding-bottom: 10px;
 
@@ -127,65 +131,114 @@
 
                 .first-slide__block {
                     position: relative;
-                    height: 200px;
+                    min-height: 180px;
+                    height: 50vw;
+                    max-height: 400px;
                     display: flex;
                     flex-direction: row;
-                    margin-top: 100px;
+                    margin-top: 70px;
 
                     .first-slide__elements {
                         height: 100%;
                         width: 100%;
 
-                        #computer-deco {
-                            width: 220px;
-                            position: absolute;
-                            top: 50px;
-                            left: 30px;
+                        .block-image {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            max-width: 1000px;
 
-                            @media #{$mqTablet} {
-                                width: 300px;
-                                top: 45px;
-                                left: 45px;
+                            #computer-deco {
+                                min-width: 180px;
+                                width: 50%;
+                                // max-width: 400px;
+                                position: absolute;
+                                top: 25%;
+                                left: 15%;
+                                // min-height: 125px;
+                                // max-height: 204px;
+
+                                // @media #{$mqTablet} {
+                                //     width: 300px;
+                                //     top: 45px;
+                                //     left: 45px;
+                                // }
+
+                                @media screen and (min-width: 1250px) {
+                                    width: 400px;
+                                    top: 7rem;
+                                    left: 160px;
+                                }
+
+                                @media #{$mqDesktop} {
+                                    width: 500px;
+                                    top: 11rem;
+                                    left: 160px;
+                                }
                             }
 
-                            @media #{$mqNotebook} {
-                                width: 400px;
-                                top: 7rem;
-                                left: 160px;
+                            #leaves-deco {
+                                min-width: 180px;
+                                width: 60%;
+                                position: absolute;
+                                top: -15%;
+                                left: 12%;
+                                // min-height: 165px;
+                                // max-height: 310px;
+
+
+                                // @media #{$mqTablet} {
+                                //     width: 325px;
+                                //     top: -55px;
+                                //     left: 30px;
+                                // }
+
+                                @media screen and (min-width: 1250px) {
+                                    width: 475px;
+                                    left: 125px;
+                                    top: -25px;
+                                }
+
+                                @media #{$mqDesktop} {
+                                    width: 500px;
+                                    left: 150px;
+                                    top: 1.5rem;
+                                }
+
+
                             }
 
-                            @media #{$mqDesktop} {
-                                width: 500px;
-                                top: 11rem;
-                                left: 160px;
+                            .green-block {
+                                width: 75%;
+                                // max-width: 750px;
+                                height: 70%;
+                                background-color: $vert2;
+                                position: absolute;
+                                border-radius: 0 500px 500px 0;
+                                background: linear-gradient(160deg,
+                                        $vert4 1%,
+                                        $vert3 20%,
+                                        $vert1 100%);
+
+                                // @media #{$mqTablet} {
+                                //     width: 450px;
+                                //     height: 225px;
+                                //     top: -50px;
+                                // }
+
+                                @media screen and (min-width: 1250px) {
+                                    width: 683px;
+                                    height: 250px;
+                                    top: 3rem;
+                                }
+
+                                @media #{$mqDesktop} {
+                                    width: 750px;
+                                    height: 300px;
+                                    top: 5rem;
+                                }
+
                             }
-                        }
-
-                        #leaves-deco {
-                            width: 250px;
-                            position: absolute;
-                            top: -30px;
-                            left: 15px;
-
-                            @media #{$mqTablet} {
-                                width: 325px;
-                                top: -55px;
-                                left: 30px;
-                            }
-
-                            @media #{$mqNotebook} {
-                                width: 475px;
-                                left: 125px;
-                                top: -25px;
-                            }
-
-                            @media #{$mqDesktop} {
-                                width: 500px;
-                                left: 150px;
-                                top: 1.5rem;
-                            }
-
-
                         }
 
                         #right-arrow {
@@ -200,7 +253,7 @@
                                 right: 15px;
                             }
 
-                            @media #{$mqNotebook} {
+                            @media screen and (min-width: 1250px) {
                                 width: 4.5rem;
                                 top: 7rem;
                                 right: 2rem;
@@ -216,46 +269,16 @@
 
                         }
 
-                        .green-block {
-                            width: 281px;
-                            height: 150px;
-                            background-color: $vert2;
-                            position: absolute;
-                            border-radius: 0 500px 500px 0;
-                            background: linear-gradient(160deg,
-                                    $vert4 1%,
-                                    $vert3 20%,
-                                    $vert1 100%);
-
-                            @media #{$mqTablet} {
-                                width: 450px;
-                                height: 225px;
-                                top: -50px;
-                            }
-
-                            @media #{$mqNotebook} {
-                                width: 683px;
-                                height: 250px;
-                                top: 3rem;
-                            }
-
-                            @media #{$mqDesktop} {
-                                width: 750px;
-                                height: 300px;
-                                top: 5rem;
-                            }
-
-                        }
 
                         .paragraph-desk {
-                            @media #{$mqNotebook} {
+                            @media screen and (min-width: 1250px) {
                                 position: absolute;
                                 width: 450px;
-                                right: 10rem;
+                                right: 10%;
                                 top: 2rem;
 
                                 h2 {
-                                    @media #{$mqNotebook} {
+                                    @media screen and (min-width: 1250px) {
                                         &::before {
                                             content: "\2022";
                                             margin-right: 15px;
@@ -271,7 +294,7 @@
                                 }
 
                                 hr {
-                                    @media #{$mqNotebook} {
+                                    @media screen and (min-width: 1250px) {
                                         height: 3px;
                                         width: 175px;
                                         margin: 1rem 0 1rem 0;
@@ -279,7 +302,7 @@
                                 }
 
                                 span {
-                                    @media #{$mqNotebook} {
+                                    @media screen and (min-width: 1250px) {
                                         font-family: "Montserrat";
                                         font-weight: 400;
                                         line-height: 2rem;
@@ -331,6 +354,10 @@
 
                 }
 
+                .paragraph-mobile {
+                    transform: translateY(-5vw);
+                }
+
             }
         }
 
@@ -346,7 +373,7 @@
                 margin-top: 100px;
 
                 .paragraph-desk {
-                    @media #{$mqNotebook} {
+                    @media screen and (min-width: 1250px) {
                         position: absolute;
                         width: 500px;
                         left: 10rem;
@@ -397,7 +424,7 @@
                         right: 15px;
                     }
 
-                    @media #{$mqNotebook} {
+                    @media screen and (min-width: 1250px) {
                         width: 4.5rem;
                         top: 7rem;
                         left: 2rem;
@@ -425,7 +452,7 @@
                         right: 5rem;
                     }
 
-                    @media #{$mqNotebook} {
+                    @media screen and (min-width: 1250px) {
                         width: 1000px;
                         bottom: 0;
                         top: -5rem;
