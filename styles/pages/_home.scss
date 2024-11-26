@@ -57,13 +57,13 @@
     }
 
     .description {
-      font-size: 11px;
+      font-size: 0.9rem;
       margin: 10px 20px 0 20px;
       line-height: 1.5;
       color: $noir;
 
       @media #{$mqTabletp} {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin: 30px 20px;
       }
 
@@ -81,6 +81,17 @@
   }
 
   .button_container {
+    @media screen and (min-width: 500px) and (max-width: 767px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+      * {
+        margin: 0 !important;
+      }
+    }
     @media #{$mqNotebookp} {
       display: flex;
       align-items: center;
@@ -191,7 +202,7 @@
     @media #{$mqTabletp} {
       width: 70%;
       margin-bottom: auto;
-      max-height: 700px;
+      transform: translateY(-50px);
     }
     @media #{$mqNotebookp} {
       max-height: max-content;
