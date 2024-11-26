@@ -18,6 +18,7 @@ les images (images vectorielles au format .svg) sont stockées dans le dossier `
 les polices d'écriture proviennent de Google Fonts, et sont les suivantes:
 	- Montserrat
 	- Roboto
+[lien vers Google Fonts](https://fonts.google.com/)
 
 ### autres
 les scripts JS sont dans le dossier `js/`
