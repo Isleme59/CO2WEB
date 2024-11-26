@@ -69,6 +69,17 @@ footer {
 		nav {
 			padding: 1rem;
 			background: none;
+			animation: popRight 500ms forwards ease-in-out;
 		}
+	}
+}
+
+@keyframes popRight {
+	0% {
+		transform: translateX(-100vw);
+	}
+
+	100% {
+		transform: translateX(0vw);
 	}
 }
