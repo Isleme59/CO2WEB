@@ -50,11 +50,10 @@
 
 		input[type=number] {
 			-moz-appearance: textfield;
-		}
-
-		input[type=number] {
 			border-width: 0 0 1px 0;
 			border-color: #a0a0a0ff;
+			padding-left: 3px;
+			padding-bottom: 10px;
 
 			&::placeholder {
 				color: #c0c0c080;
@@ -250,6 +249,12 @@
 					width: fit-content;
 					align-self: center;
 					margin: 2rem 0;
+					cursor: pointer;
+
+					&:hover {
+						background: linear-gradient($vert1 0%, $vert1 100%);
+						box-shadow: 0 0.5rem 0.5rem 0 #3dad5c80;
+					}
 				}
 			}
 
