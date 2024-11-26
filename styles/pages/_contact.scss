@@ -37,6 +37,9 @@
     }
 
     @media #{$mqNotebookp} {
+      &#bottom-left-leaf {
+        display: block;
+      }
       &#top-right-circles {
         display: block;
         animation: circles-appear 0.5s forwards;
@@ -47,9 +50,6 @@
     }
 
     @media #{$mqDesktop} {
-      &#bottom-left-leaf {
-        display: block;
-      }
       &#bottom-right-leaf {
         right: 500px;
       }
@@ -76,7 +76,7 @@
 
   #bottom-left-leaf {
     transform: translate(0, 0px);
-    @media #{$mqDesktop} {
+    @media #{$mqNotebookp} {
       position: absolute;
       background-image: url("/img/leaf.svg");
       background-repeat: no-repeat;
