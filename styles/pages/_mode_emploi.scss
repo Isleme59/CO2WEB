@@ -144,7 +144,7 @@
 
         @media #{$mqNotebook} {
             padding-left: 5rem;
-            padding-top: 2cqi;
+            padding-top: 2rem;
         }
 
         @media #{$mqDesktop} {
@@ -386,7 +386,7 @@
         }
 
         &.left {
-            rotate: 180deg;
+            transform: rotate(180deg);
 
             @media #{$mqTablet} {
                 left: 1rem;
