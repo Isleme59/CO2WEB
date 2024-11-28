@@ -232,7 +232,6 @@
 
     img {
       width: 100%;
-      transform: translateY(-20px);
       @media #{$mqDesktop} {
         transform: translateY(-150px);
       }
