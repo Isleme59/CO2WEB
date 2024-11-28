@@ -16,13 +16,15 @@
       height: 100%;
       overflow-y: hidden;
     }
+    @media #{$mqTablet} {
+      flex-direction: column;
+    }
   }
 
   .index__texte {
     @media #{$mqTabletp} {
-      margin: 70px 20px 0 20px;
-      width: 30%;
-    }
+      width: 100%;
+  }
 
     @media #{$mqNotebookp} {
       margin: 60px 100px 0 50px;
@@ -45,6 +47,9 @@
         line-height: 2rem;
         font-size: 1.7rem;
       }
+      @media #{$mqTablet} {
+        padding-top: 0px ;
+      }
 
       @media #{$mqNotebookp} {
         font-size: 2rem;
@@ -53,7 +58,7 @@
       }
 
       @media #{$mqDesktop} {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
         padding-right: 150px;
       }
     }
@@ -89,7 +94,7 @@
   }
 
   .button_container {
-    @media screen and (min-width: 700px) and (max-width: 767px) {
+    @media screen and (min-width: 700px) and (max-width: 1365px) {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -134,6 +139,7 @@
         font-size: 1.3rem;
         font-weight: normal;
       }
+
 
       @media #{$mqNotebookp} {
         margin: 0;
@@ -222,12 +228,21 @@
     aspect-ratio: 1 / 1;
 
     @media #{$mqTabletp} {
-      width: 70%;
       margin-bottom: auto;
       transform: translateY(-50px);
     }
+    @media #{$mqTablet} {
+      transform: translateY(0px);
+      margin-bottom: 0;
+      max-width: 550px;
+    }
+
     @media #{$mqNotebookp} {
       max-height: max-content;
+      max-width: 650px;
+    }
+    @media #{$mqDesktop} {
+      max-width: 75vw;
     }
 
     img {
