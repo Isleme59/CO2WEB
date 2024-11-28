@@ -359,6 +359,9 @@
           font-size: 0.9rem;
           padding-left: 3px;
           // resize: none;
+          @media #{$mqMobile} {
+            height: 40px;
+          }
 
           @media #{$mqTabletp} {
             height: 30px;
