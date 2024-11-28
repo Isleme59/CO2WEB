@@ -69,12 +69,12 @@
 
 		input[type=submit] {
 			border: none;
-			font-size: 1.4rem;
+			font-size: 1.3rem;
 			width: 100%;
 			max-width: 480px;
 			align-self: center;
 			border-radius: 500px;
-			padding: 0.5rem 1rem;
+			padding: 1rem 1rem;
 			background: linear-gradient(160deg, $vert4 0%, $vert3 33%, $vert2 67%, $vert1 100%);
 			@extend %shadow-light-green;
 			color: $blanc;
@@ -142,7 +142,12 @@
 		}
 
 		form {
-			margin-top: 5vh
+			margin-top: 5vh;
+
+			input[type=submit] {
+				font-size: 1.4rem;
+			}
+
 		}
 	}
 }

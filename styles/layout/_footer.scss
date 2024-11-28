@@ -20,12 +20,16 @@ footer {
 		align-self: center;
 	}
 
+	p {
+		line-height: 1.5rem;
+		padding: 8px 1rem 0;
+	}
+
 	p,
 	a {
 		font-weight: 500;
 	}
 
-	p,
 	nav {
 		padding: 1vh 1rem;
 

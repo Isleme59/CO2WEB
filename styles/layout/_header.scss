@@ -20,8 +20,8 @@ header {
 
 	#cross,
 	#hamburger {
-		height: 2rem;
-		width: 2rem;
+		height: 25px;
+		width: 25px;
 		margin: calc(1rem - 1px);
 		float: right;
 		display: flex;
@@ -32,7 +32,7 @@ header {
 			&.menu-icon {
 				z-index: -1;
 				border-color: $vert2;
-				height: 7px;
+				height: 20%;
 				width: 90%;
 				background-color: $vert2;
 				border-radius: 5px;
@@ -42,12 +42,24 @@ header {
 	}
 
 	#hamburger {
-		justify-content: space-around;
+		position: relative;
+		justify-content: center;
 
 		div {
-
 			&.menu-icon {
-				width: 90%;
+				position: absolute;
+
+				&#stroke-1 {
+					animation: toHamb1 500ms forwards ease-in-out;
+				}
+
+				&#stroke-2 {
+					animation: toHamb2 500ms forwards ease-in-out;
+				}
+
+				&#stroke-3 {
+					animation: toHamb3 500ms forwards ease-in-out;
+				}
 			}
 		}
 	}
@@ -61,19 +73,15 @@ header {
 				position: absolute;
 
 				&#stroke-1 {
-					transform: translate(0, 50%) rotate(45deg);
-					bottom: 50%;
-					width: 100%;
+					animation: toCross1 500ms forwards ease-in-out;
 				}
 
 				&#stroke-2 {
-					width: 0;
+					animation: toCross2 500ms forwards ease-in-out;
 				}
 
 				&#stroke-3 {
-					transform: translate(0, -50%) rotate(-45deg);
-					top: 50%;
-					width: 100%;
+					animation: toCross3 500ms forwards ease-in-out;
 				}
 			}
 		}
@@ -174,5 +182,92 @@ header {
 
 	100% {
 		transform: translateX(100vw);
+	}
+}
+
+@keyframes toCross1 {
+	0% {
+		transform: translate(0, -50%) rotate(0deg);
+		top: 20%;
+		width: 100%;
+	}
+
+	100% {
+		transform: translate(0, -50%) rotate(45deg);
+		top: 50%;
+		width: 100%;
+	}
+}
+
+@keyframes toCross2 {
+	0% {
+		transform: translate(0, -50%);
+		top: 50%;
+		width: 100%;
+	}
+
+	100% {
+		transform: translate(0, -50%);
+		top: 50%;
+		width: 0%;
+	}
+}
+
+@keyframes toCross3 {
+	0% {
+		transform: translate(0, -50%) rotate(0deg);
+		top: 80%;
+		width: 100%;
+	}
+
+	100% {
+		transform: translate(0, -50%) rotate(-45deg);
+		top: 50%;
+		width: 100%;
+	}
+}
+
+@keyframes toHamb1 {
+
+	0% {
+		transform: translate(0, -50%) rotate(-45deg);
+		top: 50%;
+		width: 100%;
+	}
+
+	100% {
+		transform: translate(0, -50%) rotate(0deg);
+		top: 20%;
+		width: 100%;
+	}
+}
+
+@keyframes toHamb2 {
+
+	0% {
+		transform: translate(0, -50%);
+		top: 50%;
+		width: 0%;
+	}
+
+	100% {
+		transform: translate(0, -50%);
+		top: 50%;
+		width: 100%;
+	}
+}
+
+@keyframes toHamb3 {
+
+	0% {
+		transform: translate(0, -50%) rotate(45deg);
+		top: 50%;
+		width: 100%;
+	}
+
+	100% {
+		transform: translate(0, -50%) rotate(0deg);
+		top: 80%;
+		width: 100%;
 	}
 }
