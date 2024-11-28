@@ -30,28 +30,10 @@ btnRight.addEventListener("click", async () => {
   indexPoints[compteur - 1].classList.add("active");
 
   //Délai avant de réactiver les clics
-  await new Promise((resolve) => setTimeout(resolve, 200));
   isAnimating = false;
 });
 
 btnLeft.addEventListener("click", async () => {
-  /*if (window.innerWidth <= 1365) {
-    compteur = compteur - 1;
-    slides.style.transition = "0.2s";
-    slides.style.transform = "translateX(" + compteur * -100 + "vw)";
-    if (compteur == 0) {
-      compteur = 3;
-      indexPoints[0].classList.remove("active");
-      setTimeout(() => {
-        slides.style.transition = "0s";
-        slides.style.transform = "translateX(" + compteur * -100 + "vw)";
-      }, 200);
-    } else {
-      indexPoints[compteur].classList.remove("active");
-    }
-    indexPoints[compteur - 1].classList.add("active");
-  }*/
-
   if (isAnimating || window.innerWidth > 1365) return; // Bloque l'animation pendant la transition
   isAnimating = true;
   compteur = compteur - 1;
@@ -70,7 +52,6 @@ btnLeft.addEventListener("click", async () => {
   indexPoints[compteur - 1].classList.add("active");
 
   //Délai avant de réactiver les clics
-  await new Promise((resolve) => setTimeout(resolve, 200));
   isAnimating = false;
 });
 
