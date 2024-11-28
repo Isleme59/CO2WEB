@@ -225,7 +225,7 @@
                                 }
 
                                 @media screen and (min-width: 1250px) {
-                                    width: 683px;
+                                    width: 635px;
                                     height: 250px;
                                     top: 3rem;
                                 }
@@ -280,8 +280,8 @@
                                 position: absolute;
                                 min-width: 400px;
                                 width: 40vw;
-                                max-width: 800px;
-                                right: 5%;
+                                max-width: 600px;
+                                left: 50vw;
                                 top: 2rem;
 
                                 h2 {
@@ -330,8 +330,9 @@
 
                             @media #{$mqDesktop} {
                                 position: absolute;
-                                width: 450px;
-                                right: 25rem;
+                                width: 650px;
+                                max-width: 800px;
+                                right: 20rem;
                                 top: 7rem;
 
                                 h2 {
@@ -445,7 +446,7 @@
 
                 .paragraph-desk {
                     @media screen and (min-width: 1250px) {
-                        padding: 100px 0 0 100px;
+                        padding: 100px 0 0 200px;
                         position: relative;
 
                         width: 40%;
@@ -455,6 +456,7 @@
 
                     @media #{$mqDesktop} {
                         position: absolute;
+                        padding: 100px 0 0 100px;
                         width: 30%;
                         left: 12rem;
                         top: 6rem;
