@@ -157,10 +157,11 @@
 
 	#calc-main {
 		padding-top: 10vh;
-		min-height: calc(90vh - 70px);
+		min-height: calc(90vh - 80px);
+		overflow: hidden;
 
 		h1 {
-			font-size: 3rem;
+			font-size: 2.5rem;
 			margin-top: 0;
 		}
 
@@ -195,7 +196,7 @@
 				height: 425px;
 				width: 425px;
 				top: -350px;
-				right: -350px;
+				right: -340px;
 				z-index: 1;
 
 				#circle-1,
@@ -240,13 +241,13 @@
 			width: 896px;
 			max-width: 1080px;
 			padding: 1rem 90px;
-			height: 500px;
 			margin-top: 3rem;
 			max-height: unset;
 			border-radius: 1.1rem;
 
 			label {
 				margin-top: 2rem;
+				font-size: 1rem;
 			}
 
 			input {
@@ -269,6 +270,51 @@
 					margin: 0;
 					font-size: 0.75rem;
 				}
+			}
+		}
+	}
+}
+
+@media #{$mqNotebook} {
+
+	#calc-main {
+		padding-top: 7vh;
+
+		.desk-deco {
+			&#top-right-circles {
+				transform: scale(0.8);
+				top: -325px;
+			}
+
+			&#leaf {
+				transform: translate(-475px, 225px) rotate(-10deg);
+			}
+
+			&#fern {
+				transform: translate(500px, 225px) rotate(20deg);
+			}
+		}
+
+		form {
+			width: 896px;
+			max-width: 1080px;
+			padding: 0 90px 20px;
+			margin-top: 2rem;
+			height: 30vw;
+			border-radius: 1.1rem;
+
+			input {
+				font-size: 1rem;
+				outline: none;
+				margin: 0;
+				font-family: Montserrat;
+			}
+		}
+
+		p {
+			&.small-text {
+				margin: 0;
+				padding-top: 0;
 			}
 		}
 	}
@@ -339,6 +385,7 @@
 		form {
 			width: 1080px;
 			padding: 1rem 120px;
+			height: 500px;
 		}
 	}
 }
