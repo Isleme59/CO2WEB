@@ -83,7 +83,7 @@
       z-index: -1;
       height: 500px;
       width: 500px;
-      transform: scale(1) translate(-305px, 220px) rotate(-10deg);
+      transform: scale(1) translate(-305px, 200px) rotate(-10deg);
       transition: 1s;
     }
   }
@@ -154,7 +154,7 @@
     transition: 1s;
 
     @media #{$mqNotebookp} {
-      transform: scale(0.6) translate(980px, 250px) rotate(5deg);
+      transform: scale(0.6) translate(980px, 200px) rotate(5deg);
     }
 
     @media #{$mqDesktop} {
@@ -169,10 +169,16 @@
     font-weight: 600;
     color: $noir;
     margin-bottom: 25px;
+    @media #{$mqMobile} {
+      margin-bottom: 0px;
+    }
 
     @media #{$mqTabletp} {
       text-align: center;
       margin-bottom: 40px;
+    }
+    @media #{$mqNotebook} {
+      font-size: 2.2rem;
     }
 
     @media #{$mqDesktop} {
@@ -182,7 +188,7 @@
 
   .contact__form {
     position: relative;
-    height: 550px;
+    height: 570px;
     color: $noir;
     border-radius: 20px;
     background-color: $blanc;
@@ -197,15 +203,17 @@
       box-shadow: 0 0 25px 0px rgb(230, 230, 230);
       z-index: -2;
     }
+    @media #{$mqMobile} {
+      transform: scaleY(0.9);
+    }
 
     @media #{$mqTabletp} {
       height: 600px;
       width: 600px;
       margin: auto;
     }
-
     @media #{$mqNotebookp} {
-      height: 650px;
+      height: 550px;
       width: 1000px;
     }
 
@@ -237,13 +245,17 @@
             transform: translateY(240px);
           }
         }
+        @media #{$mqNotebook} {
+          transform: scale(0.9, 0.85);
+        }
         @media #{$mqNotebookp} {
+          padding: 40px 80px 0;
           & > label:first-child {
-            transform: translateY(270px);
+            transform: translateY(230px);
           }
 
           #email {
-            transform: translateY(270px);
+            transform: translateY(230px);
           }
         }
 
@@ -344,7 +356,7 @@
             transform: translateY(-240px);
           }
           @media #{$mqNotebookp} {
-            transform: translateY(-260px);
+            transform: translateY(-220px);
           }
           @media #{$mqDesktop} {
             transform: translateY(-200px);
@@ -359,12 +371,12 @@
           font-size: 0.9rem;
           padding-left: 3px;
           // resize: none;
-          @media #{$mqMobile} {
-            height: 40px;
-          }
 
           @media #{$mqTabletp} {
             height: 30px;
+          }
+          @media #{$mqNotebook} {
+            margin-bottom: 30px;
           }
 
           @media #{$mqDesktop} {
@@ -380,7 +392,7 @@
             $vert3 20%,
             $vert1 100%
           );
-          box-shadow: 0 5px 22px 0px rgba(1, 82, 1, 0.56);
+          box-shadow: 0 5px 15px 0px rgba(1, 82, 1, 0.56);
           color: white;
           padding: 10px;
           border: none;
