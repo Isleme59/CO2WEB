@@ -40,6 +40,11 @@
       font-weight: 600;
       padding: 30px 20px 0 20px;
       letter-spacing: 0px;
+      @media #{$mqMobile} {
+        padding: 0px 20px 0 20px;
+        line-height: 2rem;
+        font-size: 1.7rem;
+      }
 
       @media #{$mqNotebookp} {
         font-size: 2rem;
@@ -58,6 +63,12 @@
       margin: 10px 20px 0 20px;
       line-height: 1.5;
       color: $noir;
+      @media #{$mqMobile} {
+        margin: 30px 20px 0 20px;
+        line-height: 1.2rem;
+        font-size: 1rem;
+        font-weight: 500;
+      }
 
       @media #{$mqTabletp} {
         font-size: 0.9rem;
@@ -78,13 +89,13 @@
   }
 
   .button_container {
-    @media screen and (min-width: 500px) and (max-width: 767px) {
+    @media screen and (min-width: 700px) and (max-width: 767px) {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
       gap: 20px;
-      margin-top: 30px;
+      margin: 30px 20px;
       * {
         margin: 0 !important;
       }
@@ -104,13 +115,20 @@
       margin: 20px auto 0;
       background: linear-gradient(160deg, $vert4 1%, $vert3 20%, $vert1 100%);
       border: none;
-      border-radius: 25px;
+      border-radius: 500px;
       cursor: pointer;
       font-weight: 700;
       width: 90%;
       color: $blanc;
-      box-shadow: 0 5px 22px 0px rgba(1, 82, 1, 0.56);
-      max-width: 200px;
+      box-shadow: 0 10px 15px 0px rgba(11, 162, 11, 0.36);
+      max-width: 300px;
+
+      @media #{$mqMobile} {
+        max-width: 90%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        border-radius: 500px;
+      }
 
       @media #{$mqTabletp} {
         font-size: 1.3rem;
@@ -120,7 +138,6 @@
       @media #{$mqNotebookp} {
         margin: 0;
         padding: 18px 7px;
-        border-radius: 500px;
         font-size: 1.3rem;
         font-weight: 400;
         width: 200px;
@@ -151,7 +168,13 @@
       width: 90%;
       font-size: 1rem;
       transition: 0.2s;
-      max-width: 200px;
+      max-width: 300px;
+      @media #{$mqMobile} {
+        max-width: 90%;
+        font-size: 1.4rem;
+        font-weight: 400;
+        border-radius: 500px;
+      }
 
       @media #{$mqTabletp} {
         font-size: 1.3rem;
@@ -190,11 +213,13 @@
 
   .image {
     width: 75vw;
-    margin-top: 20px;
+    // margin-top: 20px;
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
     min-height: 200px;
+    position: relative;
+    aspect-ratio: 1 / 1;
 
     @media #{$mqTabletp} {
       width: 70%;
@@ -207,7 +232,7 @@
 
     img {
       width: 100%;
-      border-radius: 0 0 0 50%;
+      transform: translateY(-20px);
       @media #{$mqDesktop} {
         transform: translateY(-150px);
       }
