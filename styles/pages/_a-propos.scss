@@ -281,7 +281,7 @@
                                 min-width: 400px;
                                 width: 40vw;
                                 max-width: 600px;
-                                left: 50vw;
+                                left: calc(50vw + 20px);
                                 top: 2rem;
 
                                 h2 {
