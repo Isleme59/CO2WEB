@@ -1,5 +1,30 @@
 const BODY = document.querySelector("body");
 const NAV = document.querySelector("nav");
+const FNAV = document.querySelector("footer").children[2].children[0].children;
+
+let i = 0;
+let fList;
+let fLink;
+
+const footerLink = () => {
+	fLink.setAttribute("onclick", "noAnim()")
+};
+
+function noAnim() {
+	iconAction = document.getElementById("hamburger");
+	iconAction.setAttribute("id", "hamburgerInit");
+}
+
+while (i < FNAV.length) {
+	fList = FNAV[i];
+	fLink = fList.children[0];
+	if (fLink.className === "active") { } else {
+		footerLink(fLink);
+	}
+	console.log(fLink);
+	i++;
+}
+
 let iconAction;
 const WIDE = 1366;
 
