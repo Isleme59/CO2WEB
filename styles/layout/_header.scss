@@ -41,6 +41,29 @@ header {
 		}
 	}
 
+	#hamburgerInit {
+		position: relative;
+		justify-content: center;
+
+		div {
+			&.menu-icon {
+				position: absolute;
+
+				&#stroke-1 {
+					animation: toHamb1 0ms forwards ease-in-out;
+				}
+
+				&#stroke-2 {
+					animation: toHamb2 0ms forwards ease-in-out;
+				}
+
+				&#stroke-3 {
+					animation: toHamb3 0ms forwards ease-in-out;
+				}
+			}
+		}
+	}
+
 	#hamburger {
 		position: relative;
 		justify-content: center;
@@ -189,7 +212,7 @@ header {
 	0% {
 		transform: translate(0, -50%) rotate(0deg);
 		top: 20%;
-		width: 100%;
+		width: 90%;
 	}
 
 	100% {
@@ -203,7 +226,7 @@ header {
 	0% {
 		transform: translate(0, -50%);
 		top: 50%;
-		width: 100%;
+		width: 90%;
 	}
 
 	100% {
@@ -217,7 +240,7 @@ header {
 	0% {
 		transform: translate(0, -50%) rotate(0deg);
 		top: 85%;
-		width: 100%;
+		width: 90%;
 	}
 
 	100% {
@@ -238,7 +261,7 @@ header {
 	100% {
 		transform: translate(0, -50%) rotate(0deg);
 		top: 20%;
-		width: 100%;
+		width: 90%;
 	}
 }
 
@@ -253,7 +276,7 @@ header {
 	100% {
 		transform: translate(0, -50%);
 		top: 50%;
-		width: 100%;
+		width: 90%;
 	}
 }
 
@@ -268,6 +291,6 @@ header {
 	100% {
 		transform: translate(0, -50%) rotate(0deg);
 		top: 85%;
-		width: 100%;
+		width: 90%;
 	}
 }
