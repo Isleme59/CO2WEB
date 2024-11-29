@@ -204,7 +204,7 @@
       z-index: -2;
     }
     @media #{$mqMobile} {
-      transform: scaleY(0.9);
+      transform: scale(0.95, 0.9) translateY(-20px);
     }
 
     @media #{$mqTabletp} {
