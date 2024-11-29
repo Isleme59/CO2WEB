@@ -50,7 +50,7 @@
 
             @media #{$mqDesktop} {
                 font-family: "Montserrat";
-                font-size: 2.25rem;
+                font-size: 2.3rem;
                 margin-bottom: 40px;
                 padding-left: 30px;
                 font-weight: 600;
@@ -147,7 +147,7 @@
                     margin-top: 70px;
 
                     @media #{$mqDesktop} {
-                        margin-top: 7rem;
+                        margin-top: 11rem;
                     }
 
                     .first-slide__elements {
@@ -256,7 +256,7 @@
 
                             @media #{$mqDesktop} {
                                 right: 4rem;
-                                transform: translate(-1rem, -70%);
+                                transform: translate(-1rem, -8rem);
                             }
 
                             #right-arrow {
@@ -323,7 +323,7 @@
 
                                 p {
                                     line-height: 1.75rem;
-                                    font-weight: 400;
+                                    font-weight: 300;
 
                                     @media #{$mqDesktop} {
                                         font-size: 1.25rem;
@@ -335,16 +335,15 @@
 
                             @media #{$mqDesktop} {
                                 position: absolute;
-                                width: 650px;
-                                max-width: 800px;
+                                width: 600px;
                                 right: 20rem;
-                                top: 5rem;
+                                transform: scale(1.2);
 
                                 h2 {
                                     @media #{$mqDesktop} {
                                         &::before {
                                             content: "\2022";
-                                            margin-right: 15px;
+                                            margin-right: 17px;
                                             font-size: 75px;
                                             color: $vert3;
                                             position: absolute;
@@ -462,10 +461,10 @@
 
                     @media #{$mqDesktop} {
                         position: absolute;
-                        padding: 175px 0 0 100px;
+                        padding: 200px 0 0 100px;
                         width: 30%;
                         left: 12rem;
-                        top: 2rem;
+                        transform: scale(1.2);
                     }
 
                     h2 {
@@ -492,7 +491,7 @@
 
                     p {
                         line-height: 1.75rem;
-                        font-weight: 400;
+                        font-weight: 300;
 
                         @media #{$mqDesktop} {
                             font-size: 1.25rem;
